@@ -1,0 +1,758 @@
+{
+    "nav": {
+        "home": "ホーム",
+        "directory": "ディレクトリ",
+        "submit": "グループを登録",
+        "login": "ログイン",
+        "user_panel": "ユーザーパネル",
+        "my_groups": "参加中のグループ",
+        "admin_dashboard": "管理ダッシュボード",
+        "settings": "設定",
+        "profile": "プロフィール",
+        "logout": "ログアウト",
+        "roles": {
+            "guest": "ゲスト",
+            "user": "ユーザー",
+            "moderator": "モデレーター",
+            "admin": "管理者",
+            "administrator": "管理者",
+            "member": "メンバー",
+            "founder": "創設者",
+            "organizer": "オーガナイザー",
+            "view_as": "表示形式："
+        }
+    },
+    "common": {
+        "select": "選択してください"
+    },
+    "enums": {
+        "group_type": {
+            "Board Game Group": "ボードゲームグループ",
+            "DND Group": "D&Dグループ",
+            "Social Group": "ソーシャルグループ",
+            "RPG Group": "RPGグループ",
+            "Card Game Group": "カードゲームグループ",
+            "Other": "その他"
+        },
+        "playstyle": {
+            "Strategy": "ストラテジー",
+            "Casual": "カジュアル",
+            "Social": "ソーシャル",
+            "RPG": "RPG",
+            "Card Games": "カードゲーム",
+            "Miniatures": "ミニチュア",
+            "Competitive": "競技",
+            "Cooperative": "協力",
+            "Light": "ライト",
+            "Medium": "ミディアム",
+            "Heavy": "ヘビー",
+            "Party": "パーティー",
+            "Party Games": "パーティーゲーム",
+            "Social Deduction": "正体隠匿",
+            "Euro Games": "ユーロゲーム",
+            "Deck Building": "デッキ構築",
+            "D&D": "D&D",
+            "Pathfinder": "パスファインダー",
+            "Tournaments": "トーナメント",
+            "Gateway Games": "入門ゲーム",
+            "Tactical": "タクティカル",
+            "Wargames": "ウォーゲーム"
+        },
+        "frequency": {
+            "Weekly": "毎週",
+            "Bi-weekly": "隔週",
+            "Monthly": "毎月",
+            "Ad Hoc": "不定期",
+            "Custom": "カスタム"
+        },
+        "experience": {
+            "Beginner Friendly": "初心者歓迎",
+            "Intermediate": "中級",
+            "Advanced": "上級",
+            "All Levels": "全レベル"
+        },
+        "language": {
+            "English": "英語",
+            "Chinese": "中国語",
+            "Spanish": "スペイン語",
+            "Japanese": "日本語",
+            "French": "フランス語",
+            "German": "ドイツ語",
+            "Korean": "韓国語"
+        },
+        "privacy": {
+            "Public": "公開",
+            "Private": "非公開"
+        },
+        "group_size": {
+            "Small": "小規模 (5-15人)",
+            "Medium": "中規模 (16-30人)",
+            "Large": "大規模 (31人以上)"
+        }
+    },
+    "auth": {
+        "title": "BGG HUB",
+        "subtitle": "ボードゲーム体験を向上させる",
+        "sign_in": "ログイン",
+        "sign_up": "サインアップ",
+        "email": "メールアドレス",
+        "password": "パスワード",
+        "secret_key": "秘密鍵",
+        "display_name": "表示名",
+        "language": "言語",
+        "phone": "電話番号 (任意)",
+        "zipcode": "郵便番号",
+        "verification_code": "確認コード",
+        "get_code": "コードを取得",
+        "authenticate": "認証",
+        "initiate_session": "セッションを開始",
+        "forgot_password": "パスワードをお忘れですか？",
+        "google_login": "Googleで続行",
+        "messages": {
+            "code_sent": "確認コードが送信されました！",
+            "login_success": "おかえりなさい！",
+            "signup_success": "アカウントが正常に作成されました！",
+            "invalid_code": "無効な確認コード",
+            "expired_code": "確認コードの有効期限が切れました",
+            "error": "エラーが発生しました",
+            "code_format_error": "コードは6文字の英数字である必要があります",
+            "google_login_success": "Googleでログインしました！",
+            "google_login_fail": "Googleログインに失敗しました: ",
+            "email_not_verified": "ログインする前にメールアドレスを確認してください。",
+            "signup_success_check_email": "アカウントが作成されました！メールを確認して認証してください。",
+            "complete_profile": "ユーザー名と言語設定を設定してください。"
+        }
+    },
+    "profile": {
+        "title": "ユーザーダッシュボード",
+        "identity": "本人確認詳細",
+        "security": "セキュリティセンター",
+        "update_profile": "プロフィール更新",
+        "change_password": "パスワード変更",
+        "new_password": "新しいパスワード",
+        "confirm_password": "パスワード確認",
+        "save_changes": "変更を保存",
+        "subtitle": "BGG HUBのIDとセキュリティを管理",
+        "email_label": "メール",
+        "current_password": "現在のパスワード",
+        "password_note": "注意：パスワードを変更すると、再ログインが必要になります。",
+        "role_label": "役割",
+        "location_label": "場所",
+        "united_states": "アメリカ合衆国",
+        "joined_label": "参加日",
+        "joined_at": "{date} に参加",
+        "default_joined_date": "2024年1月",
+        "my_groups_tab": "マイグループ",
+        "followed_groups_tab": "フォロー中のグループ",
+        "user_role": "ユーザー",
+        "no_owned_groups": "まだ自分のグループを作成していません。",
+        "submit_group": "グループを登録",
+        "no_followed_groups": "まだグループをフォローしていません。",
+        "browse_directory": "ディレクトリを閲覧",
+        "access_denied": "アクセス拒否",
+        "signin_prompt": "プロフィールを表示するにはログインしてください。",
+        "status": {
+            "rejected": "却下",
+            "pending": "保留中",
+            "claim_pending": "申請中"
+        },
+        "contact_info": "連絡先情報",
+        "account_security": "アカウントセキュリティ",
+        "account_settings": "アカウント設定"
+    },
+    "directory": {
+        "discover": "地元のボードゲームコミュニティを見つける",
+        "header_subtext": "地元のゲームグループとつながり、次の冒険を見つけ、新しいプレイヤーコミュニティに参加しましょう。",
+        "filters": "フィルター",
+        "filter_labels": {
+            "title": "フィルター",
+            "clear_all": "すべてクリア ({count})",
+            "tags": "タグ",
+            "group_type": "グループの種類",
+            "privacy": "プライバシー",
+            "group_size": "グループ規模",
+            "meeting_frequency": "開催頻度",
+            "experience_level": "経験レベル",
+            "language": "言語"
+        },
+        "search_placeholder": "グループを検索...",
+        "search_button": "グループを検索",
+        "claim_group": "グループを申請",
+        "verified": "認証済み",
+        "organized_by": "主催者",
+        "join_to_see_contact": "参加して連絡先を表示",
+        "follow_group_btn": "このグループに参加",
+        "unfollow_group_btn": "このグループのフォローを解除",
+        "apply_group_btn": "参加申請",
+        "loading": "グループを検索中...",
+        "end_of_list": "ボードゲームのフロンティアの終わりに到達しました。",
+        "no_groups_title": "グループが見つかりません",
+        "no_groups_text": "フィルターを調整して、次のゲームコミュニティを見つけてください。",
+        "clear_filters": "すべてのフィルターをクリア",
+        "join": "参加",
+        "all_locations": "すべての場所",
+        "all_categories": "すべてのカテゴリ",
+        "all_frequencies": "すべての頻度",
+        "all_playstyles": "すべてのプレイスタイル",
+        "all_privacy": "すべてのプライバシー",
+        "all_experience": "すべての経験",
+        "all_languages": "すべての言語",
+        "search_placeholder_games": "グループまたはゲームを検索...",
+        "no_groups_found": "フィルターに一致するグループが見つかりませんでした。",
+        "zip_code": "郵便番号",
+        "locate": "位置情報",
+        "submit_group": "グループを登録",
+        "view_group": "グループを表示",
+        "list": "リスト",
+        "map": "マップ",
+        "groups_found": "個のグループが見つかりました",
+        "sort_by_label": "並べ替え",
+        "sort": {
+            "popularity": "人気順",
+            "nearest": "近い順",
+            "frequency": "頻度順"
+        }
+    },
+    "landing": {
+        "pill_badge": "地元のボードゲームグループを見つける",
+        "headline_1": "ボードゲームグループを発見",
+        "headline_2": "あなたの近所で",
+        "subtext": "あなたの街の地元のボードゲームグループとつながりましょう。場所、ゲームの種類、経験レベルで検索して、あなたにぴったりのボードゲームグループを見つけましょう。",
+        "find_groups_btn": "近くのグループを探す",
+        "submit_group_btn": "グループを登録する",
+        "features": {
+            "location": {
+                "title": "場所で検索",
+                "desc": "あなたの街や近所のボードゲームグループを見つけましょう。距離でフィルターして近くのグループを発見します。"
+            },
+            "preferences": {
+                "title": "好みでフィルター",
+                "desc": "ゲームの種類、グループの規模、会合の頻度、経験レベルで検索して、最適なグループを見つけましょう。"
+            },
+            "verified": {
+                "title": "認証済み＆アクティブなグループ",
+                "desc": "認証済みで活発に活動しているボードゲームグループを閲覧できます。自分のグループを申請するか、新しいグループをディレクトリに登録しましょう。"
+            }
+        },
+        "stats": {
+            "groups": "ボードゲームグループ",
+            "cities": "対象都市",
+            "members": "アクティブメンバー"
+        },
+        "cta": {
+            "title": "ボードゲームグループを見つける準備はできましたか？",
+            "text": "今日から地元のボードゲームグループを探索し始めましょう。初心者でもエキスパートでも、あなたを待っているグループがあります。",
+            "btn": "ディレクトリを閲覧"
+        }
+    },
+    "group_card": {
+        "processing": "処理中",
+        "verified": "認証済み",
+        "pending_verification": "認証待ち",
+        "claim_this_group": "このグループを申請",
+        "public": "公開",
+        "private": "非公開",
+        "organized_by": "主催者",
+        "login_to_view": "ログインして表示",
+        "view_group": "詳細を見る",
+        "tooltips": {
+            "processing": "処理中 - 新しい提出内容を審査中です",
+            "verified": "認証済みコミュニティ - 本人確認済みです",
+            "pending_verification": "認証待ち - 申請済みですが確認作業中です",
+            "unclaimed": "未申請 - あなたが主催者ですか？このリスティングを申請しましょう！",
+            "follow": "フォロー",
+            "unfollow": "フォロー解除",
+            "follow_this_group": "このグループをフォロー",
+            "unfollow_this_group": "このグループのフォローを解除"
+        },
+        "contact_methods": {
+            "meetup": "Meetup",
+            "discord": "Discord",
+            "whatsapp": "WhatsApp",
+            "facebook": "Facebook",
+            "website": "ウェブサイト",
+            "email": "メール",
+            "twitter": "Twitter",
+            "instagram": "Instagram",
+            "bgg": "BGG",
+            "reddit": "Reddit",
+            "telegram": "Telegram",
+            "warhorn": "Warhorn",
+            "aftergame": "Aftergame",
+            "more": "他 {count} 件"
+        }
+    },
+    "group_detail": {
+        "back_to_directory": "ディレクトリに戻る",
+        "organized_by": "主催者",
+        "community_leader": "コミュニティリーダー",
+        "join_group": "このグループに参加",
+        "edit_group": "グループを編集",
+        "claim_group": "グループ申請",
+        "about": "概要",
+        "upcoming_events": "今後のイベント",
+        "powered_by_meetup": "Powered by Meetup",
+        "attending": "参加予定",
+        "spots_left": "残り枠",
+        "view_on_meetup": "Meetupですべてのイベントを見る",
+        "view_all_meetup": "Meetupですべてのイベントを見る",
+        "discord_community": "Discordコミュニティ",
+        "members": "メンバー",
+        "online": "オンライン",
+        "active_channels": "アクティブなチャンネル",
+        "recent_activity": "最近のアクティビティ",
+        "join_discord": "Discordサーバーに参加",
+        "facebook_updates": "Facebookの更新",
+        "latest_from_group": "グループからの最新情報",
+        "likes": "いいね",
+        "comments": "コメント",
+        "comments_count": "{count} 件のコメント",
+        "view_on_facebook": "Facebookで見る",
+        "external_link": "外部リンク",
+        "external_desc": "{platform}ページをチェックして、最新のアップデートやコミュニティの議論を確認してください。",
+        "visit_platform": "{platform}を訪問",
+        "contact_info": "連絡先情報",
+        "group_details": "グループ詳細",
+        "type_label": "タイプ",
+        "group_suffix": "グループ",
+        "experience_label": "経験レベル",
+        "experience_mixed": "混合",
+        "frequency_label": "会合の頻度",
+        "frequency_varies": "不定",
+        "privacy_label": "プライバシー",
+        "privacy_public": "公開",
+        "privacy_private": "非公開",
+        "location_label": "場所",
+        "language_label": "優先言語",
+        "location_tba": "未定",
+        "verified": "認証済み",
+        "default_catchline": "すべての人、すべての場所のための究極のボードゲーム体験。",
+        "default_organizer": "ゲームマスター",
+        "public_group_title": "公開グループ",
+        "public_group_desc": "このグループはすべての人に開かれています。今後のイベントに参加したり、主催者に直接連絡したりしてください。",
+        "private_group_title": "非公開グループ",
+        "private_group_desc": "このグループには追加の参加条件がある場合があります。参加リクエストの方法については、連絡先情報をご確認ください。",
+        "default_description": "ボードゲームコミュニティへようこそ！軽いパーティーゲームから重厚な戦略エピックまで、あらゆるものをプレイします。毎週の大規模な集まり、トーナメント、チャリティイベントなどにご参加ください。",
+        "login_to_view": "ログインして表示",
+        "report_this_group": "このグループを報告",
+        "board_game_group": "ボードゲームグループ",
+        "submit_your_group": "グループを登録する",
+        "not_found": "グループが見つかりません",
+        "not_found_desc": "お探しのグループは存在しません。",
+        "unapproved_access_denied": "このグループは承認待ちのため、まだ利用できません",
+        "rejected_title": "グループ登録の却下",
+        "pending_title": "承認待ちのグループ",
+        "rejected_desc": "このグループ登録は管理者によって却下されました。",
+        "pending_desc": "このグループは登録されており、現在管理者の承認を待っています。後でもう一度確認してください！",
+        "status": {
+            "processing": "処理中",
+            "rejected": "却下",
+            "verified": "認証済み",
+            "pending_verification": "認証待ち"
+        },
+        "failed_to_load": "グループ詳細の読み込みに失敗しました",
+        "approved": "承認済み",
+        "unclaimed": "未申請",
+        "bgc_unclaimed": "BGC 未申請",
+        "from_facebook": "Facebookより"
+    },
+    "submit_group": {
+        "subtitle": "ディレクトリを拡大",
+        "title": "コミュニティをリストする",
+        "desc": "世界で最も包括的なボードゲームグループディレクトリに参加しましょう。地域のプレイヤーとつながり、あなたの卓上の遺産を育てましょう。",
+        "header": {
+            "edit_title": "グループを編集",
+            "submit_title": "グループを登録",
+            "edit_desc": "以下でグループの詳細を更新してください。",
+            "submit_desc": "あなたのボードゲームコミュニティを何千人もの愛好者と共有しましょう。"
+        },
+        "sections": {
+            "guest_warning": {
+                "title_p1": "",
+                "title_p2": " のゲストとして提出中",
+                "message_p1": "ログインしていません。あなたのグループは承認のために提出され、",
+                "message_p2": "としてリストされます。あなたを含む誰でも、後でこのグループを管理するために申請を提出することができます。",
+                "unclaimed": "未承認",
+                "sign_in": "今すぐログイン",
+                "suffix": " して、提出時にこのグループを自動的に取得します。"
+            },
+            "info": {
+                "title": "基本情報",
+                "subtitle": "コミュニティの核心的な詳細を入力してください",
+                "name_label": "グループ名 *",
+                "name_placeholder": "例：ブルックリン戦略ギルド",
+                "catchline_label": "キャッチフレーズ / 短い紹介",
+                "catchline_placeholder": "グループの本質を捉えた簡潔なタグライン",
+                "desc_label": "詳細な説明 *",
+                "desc_placeholder": "潜在的なメンバーに、グループの文化、会合スタイル、ゲームの好み、そしてあなたのコミュニティの特別な点について伝えてください。",
+                "cover_label": "グループアイコン (16:9) *",
+                "banner_label": "グループヘッダーバナー (3:1)",
+                "banner_placeholder": "クリックして画像をアップロード",
+                "char_limit": "{count}/150 文字"
+            },
+            "location_type": {
+                "title": "場所とタイプ",
+                "subtitle": "プレイヤーがあなたのグループを見つけやすくします",
+                "zipcode_label": "郵便番号 *",
+                "zipcode_placeholder": "例：10001",
+                "city_label": "主要都市 *",
+                "city_placeholder": "場所を選択",
+                "state_label": "都道府県/州 *",
+                "state_placeholder": "州を選択",
+                "neighborhood_label": "近隣地域 (任意) *",
+                "neighborhood_placeholder": "例：ダウンタウン",
+                "venue_label": "主要会場 / 会合場所 (任意) *",
+                "venue_placeholder": "例：The Board Room Cafe、または 123 Main St.",
+                "privacy_label": "プライマリタイプ *",
+                "public_title": "公開グループ",
+                "public_desc": "誰でも歓迎されるオープンなコミュニティに最適です。非機密情報はゲストにも表示されますが、機密性の高いリンク（Discordなど）はコミュニティを保護するためにログインが必要になります。",
+                "private_title": "プライベートグループ",
+                "private_desc": "グループに特定の参加要件や承認プロセスがある場合に最適です。詳細はログインしたユーザーのみが閲覧できるため、コミュニティを希望通りに成長させることができます。",
+                "group_type_label": "グループタイプ *",
+                "category_placeholder": "タイプを選択",
+                "experience_label": "経験レベル *",
+                "experience_placeholder": "レベルを選択",
+                "frequency_label": "頻度 *",
+                "frequency_placeholder": "頻度を選択",
+                "playstyle_label": "プレイスタイル / ゲームの好み *",
+                "playstyle_hint": "少なくとも1つのプレイスタイルを選択してください",
+                "language_label": "使用言語 *",
+                "language_placeholder": "言語を選択"
+            },
+            "links": {
+                "title": "接続リンク",
+                "subtitle": "グループのオンラインでの存在感を示すリンクを追加してください。使用しているサービスをクリックして有効にします。",
+                "add_more": "接続をさらに追加：",
+                "add_prefix": "追加",
+                "display_events": "イベントを表示？"
+            },
+            "security": {
+                "title": "セキュリティチェック",
+                "provider": "Cloudflare Turnstile",
+                "verifying": "ブラウザを確認中..."
+            },
+            "note": {
+                "title": "提出時のメモ",
+                "note_label": "管理者へのメモ (任意)",
+                "note_placeholder": "モデレーターと共有したい追加情報があれば入力してください..."
+            },
+            "platforms": {
+                "bgg_url": {
+                    "label": "BGG URL",
+                    "placeholder": "https://boardgamegeek.com/..."
+                },
+                "website_url": {
+                    "label": "ウェブサイト",
+                    "placeholder": "https://..."
+                },
+                "discord_url": {
+                    "label": "Discord ID",
+                    "placeholder": "例: 123456789012345678",
+                    "hint": "サーバー設定 > ウィジェット に移動します。「サーバーウィジェット」を有効にし、サーバーIDをコピーします。"
+                },
+                "facebook_url": {
+                    "label": "Facebook",
+                    "placeholder": "https://facebook.com/..."
+                },
+                "meetup_url": {
+                    "label": "Meetup",
+                    "placeholder": "https://meetup.com/..."
+                },
+                "email_url": {
+                    "label": "メールアドレス",
+                    "placeholder": "hello@example.com"
+                },
+                "whatsapp_url": {
+                    "label": "WhatsApp",
+                    "placeholder": "電話番号またはリンク"
+                },
+                "reddit_url": {
+                    "label": "Reddit",
+                    "placeholder": "r/GroupName"
+                },
+                "instagram_url": {
+                    "label": "Instagram",
+                    "placeholder": "@ユーザー名"
+                },
+                "telegram_url": {
+                    "label": "Telegram",
+                    "placeholder": "https://t.me/..."
+                },
+                "aftergame_co_url": {
+                    "label": "Aftergame.io",
+                    "placeholder": "https://aftergame.io/..."
+                },
+                "twitter_url": {
+                    "label": "Twitter",
+                    "placeholder": "https://twitter.com/..."
+                },
+                "warhorn_url": {
+                    "label": "Warhorn",
+                    "placeholder": "https://warhorn.net/..."
+                }
+            }
+        },
+        "actions": {
+            "cancel": "キャンセル",
+            "submitting": "送信中...",
+            "submit": "コミュニティを送信",
+            "save": "変更を保存",
+            "saving": "保存中...",
+            "next": "次へ",
+            "back": "戻る"
+        },
+        "messages": {
+            "success": "コミュニティが正常に送信されました！モデレーターがまもなく確認します。",
+            "save_success": "グループ情報が正常に保存されました！",
+            "fail": "送信に失敗しました： ",
+            "check_fields": "すべての必須フィールドを確認してください",
+            "validation_title": "以下の必須フィールドを入力してください：",
+            "required_name": "グループ名は必須です",
+            "required_catchline": "キャッチフレーズは必須です",
+            "required_description": "説明は必須です",
+            "required_privacy": "プライバシーレベルを選択してください",
+            "required_category": "カテゴリを選択してください",
+            "required_frequency": "会合の頻度を選択してください",
+            "required_experience": "経験レベルを選択してください",
+            "required_city": "都市を選択してください",
+            "required_state": "州を選択してください",
+            "required_zipcode": "郵便番号は必須です",
+            "location_auto_filled": "場所情報が自動入力されました",
+            "invalid_url": "無効なURL形式です",
+            "guest_submit_alert": "コミュニティが提出されました。あなたはログインしていないため、「未申請」としてリストされます。",
+            "success_alert": "コミュニティが正常に提出されました！",
+            "required_fields_alert": " * 印の必須フィールドをすべて入力してください。",
+            "required_playstyle": "少なくとも 1 つのプレイスタイルを選択してください。"
+        }
+    },
+    "claim_group_page": {
+        "title": "グループを申請する",
+        "subtitle": "グループの主催者としての本人確認を行い、リスティングの管理権限を取得して認証バッジを受け取ります。",
+        "sections": {
+            "link": {
+                "title": "グループへのリンク",
+                "search_label": "グループを検索して選択",
+                "search_placeholder": "グループを検索...",
+                "select_placeholder": "申請するグループを選択"
+            },
+            "proof": {
+                "title": "所有権の証明",
+                "desc": "このグループの正当な代表者であることを証明する書類を提供してください。",
+                "role_label": "現在の管理者ロール",
+                "role_select": "ロールを選択",
+                "profile_label": "管理者プロフィールへのリンク",
+                "profile_desc": "Meetup、Facebook、Discord、またはその他のプラットフォームでの管理者/主催者のステータスを示すプロフィールへのリンク。",
+                "screenshot_label": "確認用スクリーンショット",
+                "screenshot_desc": "管理者アクセス権を示すグループ管理ダッシュボードまたは設定ページのスクリーンショットをアップロードしてください。",
+                "upload_text": "スクリーンショットをアップロード",
+                "upload_subtext": "PNG, JPG 最大10MB"
+            },
+            "contact": {
+                "title": "確認用連絡先",
+                "desc": "この情報は確認チームのみが使用し、公開されることはありません。",
+                "email_label": "グループ公式メールアドレス",
+                "discord_label": "Discordハンドル",
+                "discord_desc": "任意 - 必要に応じて直接連絡するため"
+            },
+            "agreement": {
+                "title": "確認への同意",
+                "checkbox_text": "私はこのグループの正当な代表者であり、提供された情報が正確であることを証明します。虚偽の申請は、BGCディレクトリからの削除や法的措置の可能性があることを理解しています。",
+                "next_title": "次はどうなりますか？",
+                "next_text": "私たちのチームは2〜3営業日以内にあなたの申請を確認します。追加の確認のために連絡する場合があります。承認されると、認証バッジとグループリスティングの完全な管理権限を受け取ります。"
+            }
+        },
+        "actions": {
+            "cancel": "キャンセル",
+            "submit": "申請を送信"
+        },
+        "messages": {
+            "success_title": "申請を送信しました!",
+            "success_desc": "{group} の所有権申請を受け付けました。{email} に送信された確認メールをチェックして、認証を完了してください。",
+            "success_btn": "プロフィールへ戻る",
+            "resend": "メールが届きませんか？ {btn}",
+            "resend_btn": "再送信"
+        }
+    },
+    "my_groups_page": {
+        "manage_title": "管理しているグループ",
+        "joined_title": "参加しているグループ",
+        "pending_title": "承認待ちの申請",
+        "invitations_title": "招待",
+        "pending_count": "承認待ちの申請 ({count})",
+        "waiting_approval": "承認を待っています...",
+        "invited_msg": "招待が届いています！",
+        "accept": "承認",
+        "decline": "辞退",
+        "no_associations": "現在関連しているグループはありません。",
+        "browse_directory": "ディレクトリを閲覧",
+        "role_owner": "オーナー",
+        "role_member": "メンバー",
+        "role_pending": "保留中",
+        "members_count": "{count} 名のメンバー"
+    },
+    "settings": {
+        "title": "アカウント設定",
+        "notifications": {
+            "title": "通知",
+            "desc": "更新やアラートの受信方法を管理します",
+            "newsletter": "ニュースレター"
+        }
+    },
+    "admin": {
+        "title": "管理ダッシュボード",
+        "subtitle": "ディレクトリコンテンツとユーザー報告を管理",
+        "access_badge": "管理者アクセス",
+        "access_denied_title": "アクセス拒否",
+        "access_denied_text": "このページを表示する権限がありません。",
+        "tabs": {
+            "pending": "承認待ち",
+            "claims": "申請リクエスト",
+            "reports": "報告",
+            "groups": "グループ管理",
+            "users": "ユーザー管理"
+        },
+        "actions": {
+            "review": "レビュー",
+            "approve": "承認",
+            "reject": "拒否",
+            "ignore": "無視",
+            "resolve": "解決",
+            "cancel": "キャンセル",
+            "save_changes": "変更を保存",
+            "confirm_rejection": "拒否を確認"
+        },
+        "empty": {
+            "approvals": "全部完了！",
+            "approvals_text": "承認待ちのグループはありません。",
+            "claims": "申請待ちなし",
+            "claims_text": "すべての申請が処理されました。",
+            "reports": "問題なし！",
+            "reports_text": "レビュー待ちの報告はありません。",
+            "no_groups": "検索に一致するグループが見つかりません。",
+            "no_users": "検索に一致するユーザーが見つかりません。"
+        },
+        "edit_user_title": "ユーザー編集",
+        "rejection_modal_title": "拒否理由を入力",
+        "rejection_modal_text": "この {type} を拒否する理由を説明してください。このフィードバックは主催者が申請内容を改善するのに役立ちます。",
+        "rejection_modal_placeholder": "例：説明が不完全、カバー画像が不適切など",
+        "submitted_by": "提出者",
+        "current_owner": "現在の所有者",
+        "claimant": "申請者",
+        "reporter": "報告者",
+        "name_label": "名前",
+        "email_label": "メール",
+        "role_label": "ロール",
+        "status_label": "ステータス",
+        "group_status_active": "アクティブ",
+        "group_status_pending": "保留中",
+        "user_status_active": "アクティブ",
+        "user_status_banned": "BANされた",
+        "user_role_guest": "ゲスト",
+        "user_role_user": "ユーザー",
+        "user_role_admin": "管理者",
+        "user_badge_banned": "BAN",
+        "user_badge_admin": "管理者",
+        "no_date": "日付なし",
+        "search_placeholder": "{tab} を検索...",
+        "unclaimed": "未申請",
+        "anonymous": "匿名",
+        "messages": {
+            "success": "アクションが正常に完了しました",
+            "failed": "アクションに失敗しました",
+            "group_deleted": "グループが正常に削除されました",
+            "group_rejected": "グループの申請が拒否されました",
+            "claim_rejected": "所有権の申請が拒否されました",
+            "user_updated": "ユーザーが正常に更新されました",
+            "user_deleted": "ユーザーが正常に削除されました",
+            "user_banned": "{name} をBANしました",
+            "user_unbanned": "{name} のBANを解除しました"
+        },
+        "confirms": {
+            "delete_group": "このグループを削除してもよろしいですか？この操作は取り消せません。",
+            "delete_user": "このユーザーを削除してもよろしいですか？この操作は取り消せません。",
+            "ban_user": "{name} をBANしてもよろしいですか？"
+        },
+        "tooltips": {
+            "edit_group": "グループを編集",
+            "delete_group": "グループを削除",
+            "edit_user": "ユーザーを編集",
+            "ban_user": "ユーザーをBAN",
+            "unban_user": "ユーザーのBANを解除",
+            "delete_user": "ユーザーを削除"
+        }
+    },
+    "events": {
+        "index_pill": "イベント一覧",
+        "title": "今後のボードゲームイベント",
+        "subtitle": "ボードゲームコミュニティでの次のゲームナイト、トーナメント、または交流会を見つけましょう。",
+        "loading": "ボードゲームカレンダーを読み込み中...",
+        "next_event": "次のイベント",
+        "host": "主催者：",
+        "default_desc": "ボードゲーム、戦略、そして楽しさに満ちた素晴らしい夜に参加しましょう！",
+        "join_meetup": "Meetupで参加",
+        "about_group": "グループについて",
+        "no_events": "今後のイベントはありません",
+        "no_events_desc": "認証済みのコミュニティで予定されているイベントは見つかりませんでした。後でまた確認してください！",
+        "aggregate_data": "Meetup APIからの集計データ（シミュレート）。最終更新：2026-03-20"
+    },
+    "not_found": {
+        "title": "ページが見つかりません",
+        "desc": "お探しのボードゲームは棚から消えてしまったようです。ゲームに戻りましょう。",
+        "back_home": "ホームに戻る",
+        "browse_directory": "ディレクトリを閲覧",
+        "go_back": "戻る"
+    },
+    "change_password": {
+        "back_profile": "プロフィールに戻る",
+        "title": "パスワード変更",
+        "desc": "アカウントを安全に保つために、強力なパスワードを選択してください。",
+        "current_label": "現在のパスワード",
+        "new_label": "新しいパスワード",
+        "new_hint": "8文字以上である必要があります",
+        "confirm_label": "新しいパスワード（確認）",
+        "updating": "更新中...",
+        "update_btn": "パスワードを更新",
+        "errors": {
+            "match": "新しいパスワードが一致しません",
+            "length": "パスワードは8文字以上である必要があります"
+        },
+        "success": "パスワードが正常に変更されました"
+    },
+    "groups_index": {
+        "pill": "グループ一覧",
+        "title": "すべてのボードゲームコミュニティのディレクトリ",
+        "subtitle": "全米の認証済みボードゲームグループとソーシャルコミュニティの完全なコレクションをご覧ください。",
+        "member_count": "{count} 名のメンバー",
+        "footer": "合計 {count} 件のアクティブなコミュニティが掲載されています。毎日更新。"
+    },
+    "image_upload": {
+        "modal_title_cover": "プロフィールカバーを更新",
+        "modal_title_banner": "ヘッダー画像を更新",
+        "modal_desc_cover": "16:9 のカバー画像をアップロード",
+        "modal_desc_banner": "幅広のヘッダー画像をアップロード (3:1)",
+        "modal_desc_crop_cover": "画像の位置調整と切り抜き",
+        "modal_desc_crop_banner": "ヘッダー画像の位置調整と切り抜き",
+        "dropzone": {
+            "title": "画像をドラッグ＆ドロップ",
+            "title_active": "画像をここにドロップ",
+            "tap_to_browse": "または、クリックして選択",
+            "limits": "JPEG, PNG, WebP (最大 10MB)",
+            "error_type": "JPEG, PNG, または WebP 形式の画像を選択してください。",
+            "error_size": "ファイルサイズは 10MB 以下にする必要があります。"
+        },
+        "cropper": {
+            "drag_to_reposition": "ドラッグして移動",
+            "zoom": "ズーム",
+            "rotate_left": "左回転",
+            "rotate_right": "右回転",
+            "reset": "リセット",
+            "change_image": "画像を変更"
+        },
+        "actions": {
+            "cancel": "キャンセル",
+            "save_cover": "カバーを保存",
+            "save_banner": "ヘッダーを保存",
+            "saving": "保存中..."
+        }
+    }
+}

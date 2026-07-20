@@ -1,0 +1,897 @@
+{
+    "nav": {
+        "home": "首页",
+        "directory": "目录",
+        "submit": "提交群组",
+        "login": "登录",
+        "user_panel": "用户中心",
+        "my_groups": "我的群组",
+        "admin_dashboard": "管理后台",
+        "settings": "设置",
+        "profile": "个人资料",
+        "logout": "退出",
+        "roles": {
+            "guest": "访客",
+            "user": "用户",
+            "moderator": "版主",
+            "admin": "管理员",
+            "administrator": "管理员",
+            "member": "成员",
+            "founder": "创始人",
+            "organizer": "组织者",
+            "view_as": "视图模式："
+        }
+    },
+    "common": {
+        "select": "请选择"
+    },
+    "enums": {
+        "group_type": {
+            "Board Game Group": "桌游组",
+            "DND Group": "龙与地下城组",
+            "Social Group": "社交组",
+            "RPG Group": "角色扮演组",
+            "Card Game Group": "纸牌游戏组",
+            "Other": "其他"
+        },
+        "playstyle": {
+            "Strategy": "策略",
+            "Casual": "休闲",
+            "Social": "社交",
+            "RPG": "角色扮演",
+            "Card Games": "纸牌游戏",
+            "Miniatures": "模型战棋",
+            "Competitive": "竞技",
+            "Cooperative": "合作",
+            "Light": "轻度",
+            "Medium": "中度",
+            "Heavy": "重度",
+            "Party": "派对",
+            "Party Games": "派对游戏",
+            "Social Deduction": "身份猜测/嘴炮",
+            "Euro Games": "德式桌游",
+            "Deck Building": "牌库构筑",
+            "D&D": "D&D",
+            "Pathfinder": "寻路者",
+            "Tournaments": "赛事",
+            "Gateway Games": "入门游戏",
+            "Tactical": "战术",
+            "Wargames": "战争游戏"
+        },
+        "frequency": {
+            "Weekly": "每周",
+            "Bi-weekly": "每两周",
+            "Monthly": "每月",
+            "Ad Hoc": "不定期",
+            "Custom": "自定义"
+        },
+        "experience": {
+            "Beginner Friendly": "新手友好",
+            "Intermediate": "中级",
+            "Advanced": "高级",
+            "All Levels": "不限级别"
+        },
+        "language": {
+            "English": "英语",
+            "Chinese": "中文",
+            "Spanish": "西班牙语",
+            "Japanese": "日语",
+            "French": "法语",
+            "German": "德语",
+            "Korean": "韩语"
+        },
+        "privacy": {
+            "Public": "公开",
+            "Private": "私密"
+        },
+        "group_size": {
+            "Small": "小型 (5-15人)",
+            "Medium": "中型 (16-30人)",
+            "Large": "大型 (31+人)"
+        }
+    },
+    "validation": {
+        "invalid_email": "邮箱格式无效",
+        "invalid_url": "URL格式无效",
+        "invalid_meetup": "Meetup URL 无效 (请使用 https://www.meetup.com/group-slug/)",
+        "invalid_facebook": "Facebook URL 无效 (必须以 https://www.facebook.com/ 开头)",
+        "invalid_discord_id": "Discord Server ID 无效 (需为 17-19 位数字)"
+    },
+    "auth": {
+        "title": "BGG HUB",
+        "subtitle": "提升您的桌游体验",
+        "sign_in": "登录",
+        "sign_up": "注册",
+        "email": "电子邮箱",
+        "password": "密码",
+        "secret_key": "密钥",
+        "display_name": "显示名称",
+        "language": "语言",
+        "phone": "电话号码 (可选)",
+        "zipcode": "邮政编码",
+        "zipcode_placeholder": "请输入邮政编码",
+        "verification_code": "验证码",
+        "get_code": "获取验证码",
+        "authenticate": "认证",
+        "initiate_session": "启动会话",
+        "forgot_password": "忘记密码？",
+        "google_login": "使用 Google 继续",
+        "signin": {
+            "title": "登录您的账户",
+            "signup_prompt": "或",
+            "signup_link": "创建新账户",
+            "social_prefix": "使用",
+            "continue_with": "或通过以下方式继续",
+            "remember_me": "记住我",
+            "forgot_password_btn": "忘记密码？",
+            "signing_in": "正在登录...",
+            "submit_btn": "登录",
+            "error_check": "请修正表单中的错误",
+            "login_failed": "登录失败，请检查您的凭据。"
+        },
+        "signup": {
+            "title": "创建您的账户",
+            "signin_prompt": "已经有账户了？",
+            "signin_link": "登录",
+            "social_prefix": "注册使用",
+            "continue_with": "或使用邮箱注册",
+            "name_label": "全名",
+            "name_placeholder": "张三",
+            "location_label": "位置",
+            "location_placeholder": "城市, 州/省",
+            "password_hint": "必须至少包含 8 个字符",
+            "creating_acc": "正在创建账户...",
+            "submit_btn": "创建账户",
+            "legal_p1": "点击“创建账户”，即表示您同意我们的",
+            "legal_tos": "服务条款",
+            "legal_p2": "和",
+            "legal_privacy": "隐私政策",
+            "verify_email": {
+                "title": "查收邮件",
+                "desc_p1": "我们已发送验证链接至",
+                "desc_p2": "。请点击链接激活您的账户。",
+                "verified_btn": "我已验证邮件",
+                "resend_btn": "重新发送验证邮件",
+                "resend_success": "验证邮件已重发",
+                "simulated_success": "邮件已验证（模拟）"
+            },
+            "success": "账户已创建！请查收邮件进行验证。",
+            "forgot_password": {
+                "title": "重置您的密码",
+                "desc": "输入您的电子邮箱地址，我们将为您发送重置密码的链接。",
+                "success_title": "查收邮件",
+                "success_desc": "我们已发送重置密码链接至",
+                "back_to_signin": "返回登录",
+                "submit_btn": "发送重置链接",
+                "sending": "正在发送链接...",
+                "error_failed": "发送重置邮件失败，请重试。"
+            },
+            "reset_password": {
+                "title": "设置新密码",
+                "desc": "请在下面输入您的新密码。",
+                "success_title": "密码重置成功",
+                "success_desc": "您的密码已更新。正在重定向到登录页面...",
+                "submit_btn": "更新密码",
+                "updating": "正在更新密码...",
+                "placeholder_min": "至少 {count} 个字符",
+                "placeholder_repeat": "重复密码",
+                "btn_signin": "现在去登录"
+            }
+        },
+        "messages": {
+            "code_sent": "验证码已发送！",
+            "login_success": "欢迎回来！",
+            "signup_success": "账户创建成功！",
+            "invalid_code": "验证码无效",
+            "expired_code": "验证码已过期",
+            "error": "发生错误",
+            "code_format_error": "验证码必须是6位字母数字",
+            "google_login_success": "Google 登录成功！",
+            "google_login_fail": "Google 登录失败：",
+            "email_not_verified": "请在登录前验证您的电子邮件。",
+            "signup_success_check_email": "账户已创建！请查收邮件进行验证。",
+            "complete_profile": "请设置您的用户名和语言偏好。",
+            "email_required_for_pass_reset": "请先输入您的电子邮箱",
+            "pass_reset_sent": "密码重置邮件已发送！",
+            "pass_reset_fail": "发送重置邮件失败：",
+            "check_form": "请修正表单中的错误",
+            "required": "{field} 是必填项",
+            "min_length": "长度必须至少为 {count} 个字符"
+        }
+    },
+    "profile": {
+        "title": "用户仪表板",
+        "identity": "身份详情",
+        "security": "账号安全",
+        "update_profile": "账号设置",
+        "change_password": "修改密码",
+        "new_password": "新密码",
+        "confirm_password": "确认密码",
+        "save_changes": "保存更改",
+        "subtitle": "管理您的 BGG HUB 身份和安全",
+        "email_label": "邮箱",
+        "current_password": "当前密码",
+        "password_note": "注意：更改密码将需要重新登录。",
+        "role_label": "角色",
+        "location_label": "位置",
+        "united_states": "美国",
+        "default_joined_date": "2024年1月",
+        "joined_label": "加入于",
+        "joined_at": "加入时间 {date}",
+        "my_groups_tab": "我的群组",
+        "followed_groups_tab": "关注群组",
+        "user_role": "用户",
+        "no_owned_groups": "您还没有创建任何群组。",
+        "submit_group": "提交群组",
+        "no_followed_groups": "您还没有关注任何群组。",
+        "browse_directory": "浏览目录",
+        "access_denied": "访问被拒绝",
+        "signin_prompt": "请登录以查看您的个人资料。",
+        "status": {
+            "rejected": "已拒绝",
+            "pending": "待处理",
+            "claim_pending": "认领中"
+        },
+        "contact_info": "联系信息",
+        "account_security": "账号安全",
+        "account_settings": "账号设置"
+    },
+    "directory": {
+        "discover": "探索桌游社区",
+        "header_subtext": "与当地桌游小组联系，发现您的下一次冒险，并加入一个全新的玩家社区。",
+        "filters": "筛选",
+        "filter_labels": {
+            "title": "筛选",
+            "clear_all": "清除全部 ({count})",
+            "tags": "标签",
+            "group_type": "小组类型",
+            "privacy": "隐私",
+            "group_size": "人数规模",
+            "meeting_frequency": "活动频率",
+            "experience_level": "经验要求",
+            "language": "语言"
+        },
+        "search_placeholder": "搜索群组...",
+        "search_button": "搜索群组",
+        "claim_group": "认领群组",
+        "verified": "已验证",
+        "organized_by": "组织者",
+        "join_to_see_contact": "加入以查看联系方式",
+        "follow_group_btn": "加入此群组",
+        "unfollow_group_btn": "取消关注此群组",
+        "apply_group_btn": "申请加入",
+        "loading": "正在发现更多群组...",
+        "end_of_list": "您已到达桌游边界的尽头。",
+        "no_groups_title": "未找到群组",
+        "no_groups_text": "尝试调整筛选条件以找到您的下一个游戏社区。",
+        "clear_filters": "清除所有筛选",
+        "join": "加入",
+        "all_locations": "所有城市",
+        "all_states": "所有州",
+        "all_categories": "所有类别",
+        "all_frequencies": "所有频率",
+        "all_privacy": "所有隐私",
+        "all_experience": "所有等级",
+        "all_playstyles": "所有游戏风格",
+        "all_languages": "所有语言",
+        "search_placeholder_games": "搜索群组或游戏...",
+        "no_groups_found": "未找到符合筛选条件的群组。",
+        "zip_code": "邮政编码",
+        "locate": "定位",
+        "submit_group": "提交群组",
+        "view_group": "查看群组",
+        "list": "列表",
+        "map": "地图",
+        "groups_found": "个群组",
+        "sort_by_label": "排序依据",
+        "sort": {
+            "popularity": "人气",
+            "nearest": "最近",
+            "frequency": "频率"
+        }
+    },
+    "landing": {
+        "pill_badge": "寻找您本地的桌游群组",
+        "headline_1": "发现桌游群组",
+        "headline_2": "就在您的社区",
+        "subtext": "联系您所在城市的本地桌游群组。通过位置、游戏类型和经验水平搜索，找到适合您的完美桌游群组。",
+        "find_groups_btn": "查找附近的群组",
+        "submit_group_btn": "提交您的群组",
+        "features": {
+            "location": {
+                "title": "按位置搜索",
+                "desc": "查找您所在城市或社区的桌游群组。按距离筛选以发现附近的群组。"
+            },
+            "preferences": {
+                "title": "按偏好筛选",
+                "desc": "按游戏类型、群组规模、聚会频率和经验水平搜索，找到您的完美匹配。"
+            },
+            "verified": {
+                "title": "经过验证且活跃的群组",
+                "desc": "浏览经过验证且活跃聚会的桌游群组。认领您的群组或向目录提交新群组。"
+            }
+        },
+        "stats": {
+            "groups": "桌游群组",
+            "cities": "覆盖城市",
+            "members": "活跃成员"
+        },
+        "cta": {
+            "title": "准备好寻找您的桌游群组了吗？",
+            "text": "即刻开始探索本地桌游群组。无论您是新手还是专家，都有一个群组在等着您。",
+            "btn": "浏览目录"
+        }
+    },
+    "group_card": {
+        "processing": "处理中",
+        "verified": "已验证",
+        "pending_verification": "待验证",
+        "claim_this_group": "认领此群组",
+        "public": "公开",
+        "private": "私密",
+        "organized_by": "组织者",
+        "login_to_view": "登录以查看",
+        "view_group": "查看详情",
+        "tooltips": {
+            "processing": "处理中 - 新提交的内容正在审核",
+            "verified": "认证社群 - 身份已确认",
+            "pending_verification": "等待验证 - 已认领但验证正在进行中",
+            "unclaimed": "未认领 - 您是组织者吗？认领此列表！",
+            "follow": "关注",
+            "unfollow": "取消关注",
+            "follow_this_group": "关注此小组",
+            "unfollow_this_group": "取消关注此小组"
+        },
+        "contact_methods": {
+            "meetup": "Meetup",
+            "discord": "Discord",
+            "whatsapp": "WhatsApp",
+            "facebook": "Facebook",
+            "website": "官方网站",
+            "email": "电子邮件",
+            "twitter": "Twitter",
+            "instagram": "Instagram",
+            "bgg": "BGG",
+            "reddit": "Reddit",
+            "telegram": "Telegram",
+            "warhorn": "Warhorn",
+            "aftergame": "Aftergame",
+            "more": "还有 {count} 个"
+        }
+    },
+    "group_detail": {
+        "back_to_directory": "返回目录",
+        "organized_by": "组织者",
+        "community_leader": "社区领袖",
+        "join_group": "加入此群组",
+        "edit_group": "编辑群组",
+        "claim_group": "认领群组",
+        "about": "关于",
+        "upcoming_events": "即将举办的活动",
+        "powered_by_meetup": "由 Meetup 提供支持",
+        "attending": "人参加",
+        "spots_left": "个名额剩余",
+        "view_on_meetup": "在 Meetup 上查看所有活动",
+        "view_all_meetup": "在 Meetup 上查看所有活动",
+        "discord_community": "Discord 社区",
+        "members": "成员",
+        "online": "在线",
+        "active_channels": "活跃频道",
+        "recent_activity": "近期活动",
+        "join_discord": "加入 Discord 服务器",
+        "facebook_updates": "Facebook 更新",
+        "latest_from_group": "来自我们群组的最新消息",
+        "likes": "赞",
+        "comments": "评论",
+        "comments_count": "{count} 条评论",
+        "view_on_facebook": "在 Facebook 上查看",
+        "external_link": "外部链接",
+        "external_desc": "查看我们的 {platform} 页面以获取最新更新和社区讨论。",
+        "visit_platform": "访问 {platform}",
+        "contact_info": "联系信息",
+        "group_details": "群组详情",
+        "type_label": "类型",
+        "group_suffix": "群组",
+        "experience_label": "经验水平",
+        "experience_mixed": "混合",
+        "frequency_label": "聚会频率",
+        "frequency_varies": "不固定",
+        "privacy_label": "隐私",
+        "privacy_public": "公开",
+        "privacy_private": "私密",
+        "location_label": "位置",
+        "language_label": "语言偏好",
+        "location_tba": "待定",
+        "verified": "已认证",
+        "default_catchline": "为每一个人、每一个地方提供终极桌面游戏体验。",
+        "default_organizer": "管理员",
+        "public_group_title": "公开群组",
+        "public_group_desc": "这个群组对所有人开放。欢迎参加他们即将举行的活动或直接联系组织者。",
+        "private_group_title": "私密群组",
+        "private_group_desc": "本群组可能有额外的加入要求。请查看联系信息以获取有关如何申请或请求加入的详细信息。",
+        "default_description": "欢迎来到我们的桌面游戏社区！从轻度聚会游戏到重度策略史诗,我们无所不玩。加入我们,参加每周的大型聚会、锦标赛、慈善活动等。",
+        "login_to_view": "登录后查看",
+        "report_this_group": "举报此群组",
+        "board_game_group": "桌游群组",
+        "submit_your_group": "提交您的群组",
+        "not_found": "未找到群组",
+        "not_found_desc": "您寻找的群组不存在。",
+        "unapproved_access_denied": "此群组正在待审核，尚未可用",
+        "rejected_title": "群组提交已拒绝",
+        "pending_title": "群组待审批",
+        "rejected_desc": "此群组提交已被我们的管理员审核并拒绝。",
+        "pending_desc": "此群组已提交，目前正在等待管理员审批。请稍后再来！",
+        "status": {
+            "processing": "处理中",
+            "rejected": "已拒绝",
+            "verified": "已认证",
+            "pending_verification": "待验证"
+        },
+        "failed_to_load": "加载群组详情失败",
+        "unclaimed": "未认领",
+        "bgc_unclaimed": "BGC 未认领",
+        "from_facebook": "来自 Facebook"
+    },
+    "submit_group": {
+        "subtitle": "目录访问",
+        "title": "提交您的群组",
+        "desc": "与成千上万的热情玩家分享您的桌游社群。填写下面的表单以创建一个可搜索的目录条目。",
+        "header": {
+            "edit_title": "编辑您的群组",
+            "submit_title": "提交您的群组",
+            "edit_desc": "在下方更新您的群组详情。",
+            "submit_desc": "与成千上万的桌游爱好者分享您的社群。"
+        },
+        "steps": {
+            "info": {
+                "title": "基本信息",
+                "desc": "群组核心详情"
+            },
+            "location": {
+                "title": "地点",
+                "desc": "聚会地点"
+            },
+            "profile": {
+                "title": "群组画像",
+                "desc": "偏好与频率"
+            },
+            "links": {
+                "title": "社交链接",
+                "desc": "连接社群成员"
+            }
+        },
+        "sections": {
+            "guest_warning": {
+                "title_p1": "以",
+                "title_p2": "访客身份提交",
+                "message_p1": "您尚未登录。您的群组将提交审核，并列为 ",
+                "message_p2": "。任何人（包括您）稍后都可以提交认领该群组以进行管理。",
+                "unclaimed": "未认领",
+                "sign_in": "立即登录",
+                "suffix": " 以在提交后自动认领此群组。"
+            },
+            "info": {
+                "title": "基本信息",
+                "subtitle": "输入您社区的核心细节",
+                "name_label": "群组名称 *",
+                "name_placeholder": "例如：Brooklyn Strategy Guild",
+                "catchline_label": "标语 / 简介",
+                "catchline_placeholder": "捕捉您群组本质的简短标语",
+                "desc_label": "详细描述 *",
+                "desc_placeholder": "告诉潜在成员关于您群组的文化、聚会风格、游戏偏好以及是什么让您的社区与众不同。",
+                "cover_label": "群组头像 (16:9) *",
+                "banner_label": "群组顶部横幅 (3:1)",
+                "banner_placeholder": "点击上传图片",
+                "char_limit": "{count}/150 字符"
+            },
+            "location_type": {
+                "title": "地点与类型",
+                "subtitle": "帮助玩家找到您的群组",
+                "zipcode_label": "邮政编码 *",
+                "zipcode_placeholder": "例如：10001",
+                "city_label": "主要城市 *",
+                "city_placeholder": "选择地点",
+                "state_label": "州/省 *",
+                "state_placeholder": "选择州/省",
+                "neighborhood_label": "社区 (可选) *",
+                "neighborhood_placeholder": "例如：市中心",
+                "venue_label": "主要场所 / 聚会地点 (可选) *",
+                "venue_placeholder": "例如：The Board Room Cafe，或 123 Main St.",
+                "privacy_label": "主要类型 *",
+                "public_title": "公开群组",
+                "public_desc": "非常适合欢迎任何人的开放社区。非敏感信息对访客可见，但敏感链接（如 Discord）将需要登录以保护您的社区。",
+                "private_title": "私有群组",
+                "private_desc": "非常适合您的群组有特定的加入要求或审批流程。用户必须登录才能查看详细信息，确保您的社区按您想要的方式发展。",
+                "group_type_label": "群组类型 *",
+                "category_placeholder": "选择类型",
+                "experience_label": "经验水平 *",
+                "experience_placeholder": "选择等级",
+                "frequency_label": "频率 *",
+                "frequency_placeholder": "选择频率",
+                "playstyle_label": "游玩风格 / 游戏偏好 *",
+                "playstyle_hint": "至少选择一种游玩风格",
+                "language_label": "偏好语言 *",
+                "language_placeholder": "选择语言"
+            },
+            "links": {
+                "title": "连接链接",
+                "subtitle": "添加您群组的在线存在链接。点击以启用您使用的服务。",
+                "add_more": "添加更多连接：",
+                "add_prefix": "添加",
+                "display_events": "显示活动？"
+            },
+            "security": {
+                "title": "安全验证",
+                "provider": "Cloudflare Turnstile",
+                "verifying": "正在验证您的浏览器..."
+            },
+            "note": {
+                "title": "提交备注",
+                "note_label": "对管理员的备注 (可选)",
+                "note_placeholder": "任何您想与版主分享的额外信息..."
+            },
+            "platforms": {
+                "bgg_url": {
+                    "label": "BGG 链接",
+                    "placeholder": "https://boardgamegeek.com/..."
+                },
+                "website_url": {
+                    "label": "网站",
+                    "placeholder": "https://..."
+                },
+                "discord_url": {
+                    "label": "Discord ID",
+                    "placeholder": "例如: 123456789012345678",
+                    "hint": "前往服务器设置 > 部件。启用“服务器部件”并复制服务器 ID。"
+                },
+                "facebook_url": {
+                    "label": "Facebook",
+                    "placeholder": "https://facebook.com/..."
+                },
+                "meetup_url": {
+                    "label": "Meetup",
+                    "placeholder": "https://meetup.com/...",
+                    "public_title": "公开群组 (同步活动)",
+                    "public_desc": "通过 Meetup API 自动同步并显示即将在目录中的活动。",
+                    "private_title": "私有群组 (仅限链接)",
+                    "private_desc": "仅在您的群组页面显示 Meetup 链接，不进行活动同步。"
+                },
+                "email_url": {
+                    "label": "电子邮件",
+                    "placeholder": "hello@example.com"
+                },
+                "whatsapp_url": {
+                    "label": "WhatsApp",
+                    "placeholder": "电话号码或链接"
+                },
+                "reddit_url": {
+                    "label": "Reddit",
+                    "placeholder": "r/GroupName"
+                },
+                "instagram_url": {
+                    "label": "Instagram",
+                    "placeholder": "@用户名称"
+                },
+                "telegram_url": {
+                    "label": "Telegram",
+                    "placeholder": "https://t.me/..."
+                },
+                "aftergame_co_url": {
+                    "label": "Aftergame.io",
+                    "placeholder": "https://aftergame.io/..."
+                },
+                "twitter_url": {
+                    "label": "Twitter",
+                    "placeholder": "https://twitter.com/..."
+                },
+                "warhorn_url": {
+                    "label": "Warhorn",
+                    "placeholder": "https://warhorn.net/..."
+                }
+            }
+        },
+        "actions": {
+            "cancel": "取消",
+            "submitting": "正在传输...",
+            "submit": "提交社区",
+            "save": "保存群组信息",
+            "saving": "正在保存...",
+            "next": "继续",
+            "back": "返回"
+        },
+        "messages": {
+            "success": "社区提交成功！我们的管理员将很快审核。",
+            "save_success": "群组信息保存成功！",
+            "fail": "提交失败：",
+            "check_fields": "检查所有必填字段",
+            "validation_title": "请填写以下必填项：",
+            "required_name": "组名称为必填项",
+            "required_catchline": "简短描述为必填项",
+            "required_description": "详细介绍为必填项",
+            "required_privacy": "请选择隐私级别",
+            "required_category": "请选择分类",
+            "required_frequency": "请选择活动频率",
+            "required_experience": "请选择经验等级",
+            "required_city": "请选择城市",
+            "required_state": "请选择州",
+            "required_zipcode": "邮政编码为必填项",
+            "location_auto_filled": "位置信息已自动填充",
+            "invalid_url": "无效的 URL 格式",
+            "required_playstyle": "请至少选择一种游玩风格",
+            "guest_submit_alert": "群组已提交审批！由于您未登录，此群组被列为“未认领”。",
+            "success_alert": "群组提交成功！",
+            "required_fields_alert": "请填写所有标有 * 的必填字段"
+        }
+    },
+    "claim_group_page": {
+        "title": "认领您的社群",
+        "subtitle": "验证您作为社群组织者的身份，以获得对社群列表的控制权并获得验证徽章。",
+        "sections": {
+            "link": {
+                "title": "链接到社群",
+                "search_label": "搜索并选择您的社群 *",
+                "search_placeholder": "搜索您的社群...",
+                "select_placeholder": "选择要认领的社群"
+            },
+            "proof": {
+                "title": "所有权证明",
+                "desc": "请提供证明您是该社群授权代表的文件。",
+                "role_label": "当前管理员角色 *",
+                "role_select": "选择您的角色",
+                "profile_label": "管理员个人主页链接 *",
+                "profile_desc": "链接到您在 Meetup、Facebook、Discord 或其他显示管理员/组织者状态的平台上的个人主页。",
+                "screenshot_label": "验证截图",
+                "screenshot_desc": "上传显示您管理员权限的社群管理后台或设置页面的截图。",
+                "upload_text": "点击上传截图",
+                "upload_subtext": "支持 PNG, JPG，最大 10MB"
+            },
+            "contact": {
+                "title": "联系验证",
+                "desc": "此信息仅供我们的验证团队使用，不会公开。",
+                "email_label": "组织者邮箱 *",
+                "phone_label": "电话号码",
+                "phone_desc": "可选 - 必要时用于直接跟进"
+            },
+            "agreement": {
+                "title": "验证协议",
+                "checkbox_text": "我证明我是该社群的授权代表，并且提供的信息准确无误。我了解虚假认领可能导致从 BGC 目录中移除并可能面临法律诉讼。",
+                "next_title": "接下来会发生什么？",
+                "next_text": "我们的团队将在 2-3 个工作日内审核您的认领请求。我们可能会联系您进行进一步验证。一旦获得批准，您将获得验证徽章，并拥有对社群列表的完全控制权。"
+            }
+        },
+        "actions": {
+            "cancel": "取消",
+            "submit": "提交认领请求"
+        },
+        "messages": {
+            "success_title": "认领已提交!",
+            "success_desc": "我们已收到您对 {group} 的认领请求。请检查您的电子邮件 {email} 以获取验证链接以完成流程。",
+            "success_btn": "前往个人资料",
+            "resend": "没收到邮件？ {btn}",
+            "resend_btn": "重新发送"
+        }
+    },
+    "my_groups_page": {
+        "manage_title": "我拥有的群",
+        "followed_title": "我的关注",
+        "role_owner": "群主",
+        "role_member": "关注者",
+        "no_associations": "您目前尚未拥有或关注任何群组。",
+        "browse_directory": "浏览目录",
+        "members_count": "{count} 名成员",
+        "pending_approval": "待审核",
+        "processing": "审核中",
+        "delete_submission": "取消申请",
+        "approved": "已批准",
+        "no_owned_groups": "您还没有创建任何群组。"
+    },
+    "settings": {
+        "title": "账户设置",
+        "notifications": {
+            "title": "通知",
+            "desc": "管理您接收更新和提醒的方式",
+            "newsletter": "时事通讯"
+        }
+    },
+    "admin": {
+        "title": "管理控制台",
+        "subtitle": "管理目录内容和用户举报",
+        "access_badge": "管理员权限",
+        "access_denied_title": "访问被拒绝",
+        "access_denied_text": "您没有权限查看此页面。",
+        "tabs": {
+            "pending": "待审核",
+            "claims": "认领请求",
+            "reports": "举报",
+            "groups": "管理群组",
+            "users": "管理用户"
+        },
+        "actions": {
+            "review": "审查",
+            "approve": "批准",
+            "reject": "拒绝",
+            "ignore": "忽略",
+            "resolve": "解决",
+            "cancel": "取消",
+            "save_changes": "保存更改",
+            "confirm_rejection": "确认拒绝",
+            "unapprove": "撤回批准",
+            "enable": "启用",
+            "disable": "禁用",
+            "verify": "认证",
+            "unverify": "取消认证",
+            "edit": "编辑",
+            "save": "保存",
+            "delete": "删除"
+        },
+        "empty": {
+            "approvals": "全部处理完毕！",
+            "approvals_text": "没有待审批的群组。",
+            "claims": "没有待处理的认领",
+            "claims_text": "所有所有权认领均已处理。",
+            "reports": "一切正常！",
+            "reports_text": "没有待审查的举报。",
+            "no_groups": "没有找到匹配的群组。",
+            "no_users": "没有找到匹配的用户。"
+        },
+        "edit_user_title": "编辑用户",
+        "rejection_modal_title": "提供拒绝原因",
+        "rejection_modal_text": "请说明拒绝此 {type} 的原因。此类反馈将帮助组织者改进其提交的内容。",
+        "rejection_modal_placeholder": "例如：描述不完整、封面图片不合适等。",
+        "submitted_by": "提交者",
+        "current_owner": "当前所有者",
+        "claimant": "认领者",
+        "reporter": "举报人",
+        "name_label": "名称",
+        "email_label": "邮箱",
+        "role_label": "角色",
+        "status_label": "状态",
+        "group_status_active": "活跃",
+        "group_status_pending": "待审核",
+        "user_status_active": "活跃",
+        "user_status_banned": "已封禁",
+        "user_role_guest": "访客",
+        "user_role_user": "用户",
+        "user_role_admin": "管理员",
+        "user_badge_banned": "已封禁",
+        "user_badge_admin": "管理员",
+        "no_date": "暂无日期",
+        "search_placeholder": "搜索 {tab}...",
+        "unclaimed": "未认领",
+        "guest": "访客",
+        "anonymous": "匿名",
+        "disabled": "已禁用",
+        "joined": "加入时间",
+        "role": "角色",
+        "verified": "已验证",
+        "system_account": "系统账号",
+        "by": "来自",
+        "reason": "原因",
+        "no_entries": "{tab} 暂无内容",
+        "claim_request_for": "社群认领请求：",
+        "view_proof": "查看证明",
+        "reported": "被举报：",
+        "messages": {
+            "success": "操作成功完成",
+            "failed": "操作失败",
+            "group_deleted": "群组删除成功",
+            "group_rejected": "群组申请已拒绝",
+            "claim_rejected": "认领请求已拒绝",
+            "user_updated": "用户更新成功",
+            "user_deleted": "用户删除成功",
+            "user_banned": "已封禁 {name}",
+            "user_unbanned": "已解封 {name}"
+        },
+        "confirms": {
+            "delete_group": "您确定要删除此群组吗？此操作无法撤销。",
+            "delete_user": "您确定要删除此用户吗？此操作无法撤销。",
+            "ban_user": "您确定要封禁 {name} 吗？"
+        },
+        "tooltips": {
+            "edit_group": "编辑群组",
+            "delete_group": "删除群组",
+            "edit_user": "编辑用户",
+            "ban_user": "封禁用户",
+            "unban_user": "解封用户",
+            "delete_user": "删除用户"
+        }
+    },
+    "report_group": {
+        "title": "举报群组",
+        "subtitle": "帮助我们维护 BGC 目录的质量",
+        "back_to_group": "返回群组",
+        "reporting_label": "举报对象",
+        "reason_label": "举报原因 *",
+        "reason_placeholder": "请选择原因",
+        "description_label": "详细说明 *",
+        "description_placeholder": "请提供有关问题的具体细节...",
+        "email_label": "您的邮箱（可选）",
+        "email_placeholder": "我们可能会联系您以获取更多信息",
+        "actions": {
+            "cancel": "取消",
+            "submit": "提交举报"
+        },
+        "reasons": {
+            "inappropriate": "违规内容",
+            "spam": "垃圾信息或误导",
+            "inactive": "群组已失效",
+            "duplicate": "重复列表",
+            "wrong_info": "信息错误",
+            "other": "其他"
+        }
+    },
+    "events": {
+        "index_pill": "活动索引",
+        "title": "即将举行的桌游活动",
+        "subtitle": "发现桌游社区中的下一次游戏之夜、锦标赛或社交聚会。",
+        "loading": "正在加载桌游日历...",
+        "next_event": "下个活动",
+        "host": "主办方：",
+        "default_desc": "加入我们，享受一个精彩的桌游、策略和乐趣之夜！",
+        "join_meetup": "在 Meetup 上加入",
+        "about_group": "关于群组",
+        "no_events": "暂无近期活动",
+        "no_events_desc": "我们在已认领的社区中未发现任何已排期的活动。请稍后再来查看！",
+        "aggregate_data": "数据来自 Meetup API (模拟)。最后更新时间：2026-03-20。"
+    },
+    "not_found": {
+        "title": "页面未找到",
+        "desc": "您寻找的桌游似乎不在书架上。让我们带您回到游戏中。",
+        "back_home": "返回首页",
+        "browse_directory": "浏览目录",
+        "go_back": "返回"
+    },
+    "change_password": {
+        "back_profile": "返回个人资料",
+        "title": "更改密码",
+        "desc": "选择一个强密码以确保您的账号安全。",
+        "current_label": "当前密码",
+        "new_label": "新密码",
+        "new_hint": "长度必须至少为 8 个字符",
+        "confirm_label": "确认新密码",
+        "updating": "正在更新...",
+        "update_btn": "更新密码",
+        "errors": {
+            "match": "新密码不匹配",
+            "length": "密码长度必须至少为 8 个字符"
+        },
+        "success": "密码更改成功"
+    },
+    "groups_index": {
+        "pill": "群组索引",
+        "title": "所有桌游社区目录",
+        "subtitle": "浏览我们在全美范围内收集的已认证桌游群组和社交社区。",
+        "member_count": "{count} 名成员",
+        "footer": "共列出 {count} 个活跃社区。每日更新。"
+    },
+    "image_upload": {
+        "modal_title_cover": "更新封面图片",
+        "modal_title_banner": "更新横幅图片",
+        "modal_desc_cover": "上传 16:9 的封面图",
+        "modal_desc_banner": "上传宽比例横幅图 (3:1)",
+        "modal_desc_crop_cover": "调整位置并裁剪图片",
+        "modal_desc_crop_banner": "调整位置并裁剪横幅",
+        "dropzone": {
+            "title": "将图片拖放到此处",
+            "title_active": "释放图片进行上传",
+            "tap_to_browse": "或点击浏览文件",
+            "limits": "支持 JPEG, PNG, WebP 格式，最大 10MB",
+            "error_type": "请选择 JPEG, PNG 或 WebP 格式的图片。",
+            "error_size": "文件大小不能超过 10MB。"
+        },
+        "cropper": {
+            "drag_to_reposition": "拖动以调整位置",
+            "zoom": "缩放",
+            "rotate_left": "向左旋转",
+            "rotate_right": "向右旋转",
+            "reset": "重置",
+            "change_image": "更换图片"
+        },
+        "actions": {
+            "cancel": "取消",
+            "save_cover": "保存封面",
+            "save_banner": "保存横幅",
+            "saving": "保存中..."
+        }
+    }
+}
