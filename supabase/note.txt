@@ -1,0 +1,5 @@
+1. add about us
+2.add the cover image, if is the actual image or not. Its important that we know if its the real group image because if its meetup generic its very obvious we scrapped them. 
+3.scrape rss coming events and the past events, the information of context of events lists
+4.scrape the team leader information page on meetup groups
+5.scape the social links of the groups on other platform
