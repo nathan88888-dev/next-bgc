@@ -1,0 +1,905 @@
+{
+    "nav": {
+        "home": "Home",
+        "directory": "Directory",
+        "submit": "Submit Group",
+        "login": "Sign In",
+        "user_panel": "User Panel",
+        "my_groups": "My Groups",
+        "admin_dashboard": "Admin Dashboard",
+        "settings": "Settings",
+        "profile": "Profile",
+        "logout": "Logout",
+        "roles": {
+            "guest": "Guest",
+            "user": "User",
+            "moderator": "Moderator",
+            "admin": "Admin",
+            "administrator": "Administrator",
+            "member": "Member",
+            "founder": "Founder",
+            "organizer": "Organizer",
+            "view_as": "View as:"
+        }
+    },
+    "common": {
+        "select": "Please Select"
+    },
+    "enums": {
+        "group_type": {
+            "Board Game Group": "Board Game Group",
+            "DND Group": "DND Group",
+            "Social Group": "Social Group",
+            "RPG Group": "RPG Group",
+            "Card Game Group": "Card Game Group",
+            "Other": "Other"
+        },
+        "playstyle": {
+            "Strategy": "Strategy",
+            "Casual": "Casual",
+            "Social": "Social",
+            "RPG": "RPG",
+            "Card Games": "Card Games",
+            "Miniatures": "Miniatures",
+            "Competitive": "Competitive",
+            "Cooperative": "Cooperative",
+            "Light": "Light",
+            "Medium": "Medium",
+            "Heavy": "Heavy",
+            "Party": "Party",
+            "Party Games": "Party Games",
+            "Social Deduction": "Social Deduction",
+            "Euro Games": "Euro Games",
+            "Deck Building": "Deck Building",
+            "D&D": "D&D",
+            "Pathfinder": "Pathfinder",
+            "Tournaments": "Tournaments",
+            "Gateway Games": "Gateway Games",
+            "Tactical": "Tactical",
+            "Wargames": "Wargames"
+        },
+        "frequency": {
+            "Weekly": "Weekly",
+            "Bi-weekly": "Bi-weekly",
+            "Monthly": "Monthly",
+            "Ad Hoc": "Ad Hoc",
+            "Custom": "Custom"
+        },
+        "experience": {
+            "Beginner Friendly": "Beginner Friendly",
+            "Intermediate": "Intermediate",
+            "Advanced": "Advanced",
+            "All Levels": "All Levels"
+        },
+        "language": {
+            "English": "English",
+            "Chinese": "Chinese",
+            "Spanish": "Spanish",
+            "Japanese": "Japanese",
+            "French": "French",
+            "German": "German",
+            "Korean": "Korean"
+        },
+        "privacy": {
+            "Public": "Public",
+            "Private": "Private"
+        },
+        "group_size": {
+            "Small": "Small (5-15)",
+            "Medium": "Medium (16-30)",
+            "Large": "Large (31+)"
+        }
+    },
+    "validation": {
+        "invalid_email": "Invalid email address format",
+        "invalid_url": "Invalid URL format",
+        "invalid_meetup": "Invalid Meetup URL (use https://www.meetup.com/group-slug/)",
+        "invalid_facebook": "Invalid Facebook URL (must start with https://www.facebook.com/)",
+        "invalid_discord_id": "Invalid Discord Server ID (must be 17-19 numeric characters)"
+    },
+    "auth": {
+        "title": "BGG HUB",
+        "subtitle": "Elevate your board game experience",
+        "sign_in": "Sign In",
+        "sign_up": "Sign Up",
+        "email": "Email Address",
+        "password": "Password",
+        "secret_key": "Secret Key",
+        "display_name": "Display Name",
+        "language": "Language",
+        "phone": "Phone Number(optional)",
+        "zipcode": "Zipcode",
+        "zipcode_placeholder": "Enter your zipcode",
+        "verification_code": "Verification Code",
+        "get_code": "Get Code",
+        "authenticate": "Authenticate",
+        "initiate_session": "Initiate Session",
+        "forgot_password": "Forgot Password?",
+        "google_login": "Continue with Google",
+        "signin": {
+            "title": "Sign in to your account",
+            "signup_prompt": "Or",
+            "signup_link": "create a new account",
+            "social_prefix": "Sign in with",
+            "continue_with": "Or continue with",
+            "remember_me": "Remember me",
+            "forgot_password_btn": "Forgot your password?",
+            "signing_in": "Signing in...",
+            "submit_btn": "Sign in",
+            "error_check": "Please fix the errors in the form",
+            "login_failed": "Failed to sign in. Please check your credentials."
+        },
+        "signup": {
+            "title": "Create your account",
+            "signin_prompt": "Already have an account?",
+            "signin_link": "Sign in",
+            "social_prefix": "Sign up with",
+            "continue_with": "Or register with email",
+            "name_label": "Full Name",
+            "name_placeholder": "John Doe",
+            "location_label": "Location",
+            "location_placeholder": "City, State",
+            "password_hint": "Must be at least 8 characters",
+            "creating_acc": "Creating account...",
+            "submit_btn": "Create account",
+            "legal_p1": "By clicking \"Create account\", you agree to our",
+            "legal_tos": "Terms of Service",
+            "legal_p2": "and",
+            "legal_privacy": "Privacy Policy",
+            "verify_email": {
+                "title": "Check your email",
+                "desc_p1": "We've sent a verification link to",
+                "desc_p2": ". Please click the link to activate your account.",
+                "verified_btn": "I've verified my email",
+                "resend_btn": "Resend verification email",
+                "resend_success": "Verification email re-sent",
+                "simulated_success": "Email verified (Simulated)"
+            },
+            "success": "Account created! Please verify your email.",
+            "forgot_password": {
+                "title": "Reset your password",
+                "desc": "Enter your email address and we'll send you a link to reset your password.",
+                "success_title": "Check your email",
+                "success_desc": "We've sent a password reset link to",
+                "back_to_signin": "Back to sign in",
+                "submit_btn": "Send reset link",
+                "sending": "Sending link...",
+                "error_failed": "Failed to send reset email. Please try again."
+            },
+            "reset_password": {
+                "title": "Set new password",
+                "desc": "Please enter your new password below.",
+                "success_title": "Password reset successful",
+                "success_desc": "Your password has been updated. Redirecting to sign in page...",
+                "submit_btn": "Update password",
+                "updating": "Updating password...",
+                "placeholder_min": "Min {count} characters",
+                "placeholder_repeat": "Repeat password",
+                "btn_signin": "Go to sign in now"
+            }
+        },
+        "messages": {
+            "code_sent": "Verification code has been sent!",
+            "login_success": "Welcome back!",
+            "signup_success": "Account created successfully!",
+            "invalid_code": "Invalid verification code",
+            "expired_code": "Verification code has expired",
+            "error": "An error occurred",
+            "code_format_error": "Code must be 6 alphanumeric characters",
+            "google_login_success": "Logged in with Google!",
+            "google_login_fail": "Google login failed: ",
+            "email_not_verified": "Please verify your email before logging in.",
+            "signup_success_check_email": "Account created! Please check your email to verify.",
+            "complete_profile": "Please set your username and language preference.",
+            "email_required_for_pass_reset": "Please enter your email first",
+            "pass_reset_sent": "Password reset email sent!",
+            "pass_reset_fail": "Failed to send reset email: ",
+            "check_form": "Please fix the errors in the form",
+            "required": "{field} is required",
+            "min_length": "Must be at least {count} characters"
+        }
+    },
+    "profile": {
+        "title": "User Dashboard",
+        "identity": "Identity Details",
+        "security": "Account Security",
+        "update_profile": "Profile Settings",
+        "change_password": "Change Password",
+        "new_password": "New Password",
+        "confirm_password": "Confirm Password",
+        "save_changes": "Save Changes",
+        "subtitle": "Manage your BGG HUB identity and security",
+        "email_label": "Email",
+        "current_password": "Current Password",
+        "password_note": "Note: Changing your password will require a new session login.",
+        "role_label": "Role",
+        "location_label": "Location",
+        "united_states": "United States",
+        "default_joined_date": "January 2024",
+        "joined_label": "Joined",
+        "joined_at": "Joined {date}",
+        "my_groups_tab": "My Groups",
+        "followed_groups_tab": "Followed Groups",
+        "user_role": "User",
+        "no_owned_groups": "You don't own any groups yet.",
+        "submit_group": "Submit a Group",
+        "no_followed_groups": "You are not following any groups yet.",
+        "browse_directory": "Browse Directory",
+        "access_denied": "Access Denied",
+        "signin_prompt": "Please sign in to view your profile.",
+        "status": {
+            "rejected": "Rejected",
+            "pending": "Pending",
+            "claim_pending": "Claim Pending"
+        },
+        "contact_info": "Contact Information",
+        "account_security": "Account Security",
+        "account_settings": "Account Settings"
+    },
+    "directory": {
+        "discover": "Discover Board Game Communities",
+        "header_subtext": "Connect with local gaming groups, find your next adventure, and join a new community of players.",
+        "filters": "Filters",
+        "filter_labels": {
+            "title": "Filters",
+            "clear_all": "Clear All ({count})",
+            "tags": "Tags",
+            "group_type": "Group Type",
+            "privacy": "Privacy",
+            "group_size": "Group Size",
+            "meeting_frequency": "Meeting Frequency",
+            "experience_level": "Experience Level",
+            "language": "Language"
+        },
+        "search_placeholder": "Search groups...",
+        "search_placeholder_games": "Search groups or games...",
+        "search_button": "Search Groups",
+        "claim_group": "Claim a Group",
+        "verified": "Verified",
+        "organized_by": "Organized by",
+        "join_to_see_contact": "Join to see contact info",
+        "follow_group_btn": "Follow this Group",
+        "unfollow_group_btn": "Unfollow this Group",
+        "apply_group_btn": "Apply to Join",
+        "loading": "Discovering more groups...",
+        "end_of_list": "You've reached the end of the board game frontier.",
+        "no_groups_title": "NO GROUPS FOUND",
+        "no_groups_text": "Try adjusting your filters to find your next gaming community.",
+        "no_groups_found": "No groups found matching your filters.",
+        "clear_filters": "CLEAR ALL FILTERS",
+        "join": "Join",
+        "all_locations": "All Locations",
+        "all_states": "All States",
+        "all_categories": "All Categories",
+        "all_frequencies": "All Frequencies",
+        "all_privacy": "All Privacy",
+        "all_experience": "All Experience",
+        "all_playstyles": "All Playstyles",
+        "all_languages": "All Languages",
+        "zip_code": "Zip Code",
+        "locate": "Locate",
+        "submit_group": "Submit Group",
+        "view_group": "View Group",
+        "list": "List",
+        "map": "Map",
+        "groups_found": "Groups Found",
+        "sort_by_label": "Sort by",
+        "sort": {
+            "popularity": "Popularity",
+            "nearest": "Nearest",
+            "frequency": "Frequency"
+        },
+        "errors": {
+            "zip": "Please enter a valid 5-digit zip code",
+            "zip_not_found": "Zip code not found",
+            "location_fetch": "Error fetching location data"
+        },
+        "searching_near": "Searching near {place}, {state}"
+    },
+    "landing": {
+        "pill_badge": "Find Your Local Board Game Group",
+        "headline_1": "Discover Board Game Groups",
+        "headline_2": "In Your Neighborhood",
+        "subtext": "Connect with local board game groups in your city. Search by location, game type, and experience level to find the perfect board game group for you.",
+        "find_groups_btn": "Find Groups Near You",
+        "submit_group_btn": "Submit Your Group",
+        "features": {
+            "location": {
+                "title": "Search by Location",
+                "desc": "Find board game groups in your city or neighborhood. Filter by distance to discover groups nearby."
+            },
+            "preferences": {
+                "title": "Filter by Preferences",
+                "desc": "Search by game type, group size, meeting frequency, and experience level to find your perfect match."
+            },
+            "verified": {
+                "title": "Verified & Active Groups",
+                "desc": "Browse verified and actively meeting board game groups. Claim your group or submit a new one to the directory."
+            }
+        },
+        "stats": {
+            "groups": "Board Game Groups",
+            "cities": "Cities Covered",
+            "members": "Active Members"
+        },
+        "cta": {
+            "title": "Ready to Find Your Board Game Group?",
+            "text": "Start exploring local board game groups today. Whether you're a beginner or expert, there's a group waiting for you.",
+            "btn": "Browse Directory"
+        }
+    },
+    "group_card": {
+        "processing": "Processing",
+        "verified": "Verified",
+        "pending_verification": "Pending Verification",
+        "claim_this_group": "Claim This Group",
+        "public": "Public",
+        "private": "Private",
+        "organized_by": "Organized by",
+        "login_to_view": "Login to View",
+        "view_group": "View Group",
+        "tooltips": {
+            "processing": "Processing - New submission being reviewed",
+            "verified": "Verified Community - Authenticity confirmed",
+            "pending_verification": "Pending Verification - Claimed but verification in progress",
+            "unclaimed": "Unclaimed - Are you the organizer? Claim this listing!",
+            "follow": "Follow",
+            "unfollow": "Unfollow",
+            "follow_this_group": "Follow this group",
+            "unfollow_this_group": "Unfollow this group"
+        },
+        "contact_methods": {
+            "meetup": "Meetup",
+            "discord": "Discord",
+            "whatsapp": "WhatsApp",
+            "facebook": "Facebook",
+            "website": "Website",
+            "email": "Email",
+            "twitter": "Twitter",
+            "instagram": "Instagram",
+            "bgg": "BGG",
+            "reddit": "Reddit",
+            "telegram": "Telegram",
+            "warhorn": "Warhorn",
+            "aftergame": "Aftergame",
+            "more": "{count} more"
+        }
+    },
+    "group_detail": {
+        "back_to_directory": "Back to Directory",
+        "organized_by": "Organized by",
+        "community_leader": "Community Leader",
+        "join_group": "Join this Group",
+        "edit_group": "Edit Group",
+        "claim_group": "Claim Group",
+        "about": "About",
+        "upcoming_events": "Upcoming Events",
+        "powered_by_meetup": "Powered by Meetup",
+        "attending": "attending",
+        "spots_left": "spots left",
+        "view_on_meetup": "View all events on Meetup",
+        "view_all_meetup": "View all events on Meetup",
+        "discord_community": "Discord Community",
+        "members": "members",
+        "online": "online",
+        "active_channels": "Active Channels",
+        "recent_activity": "Recent Activity",
+        "join_discord": "Join Discord Server",
+        "facebook_updates": "Facebook Updates",
+        "latest_from_group": "Latest from our group",
+        "likes": "likes",
+        "comments": "comments",
+        "comments_count": "{count} comments",
+        "view_on_facebook": "View on Facebook",
+        "external_link": "External Link",
+        "external_desc": "Check out our {platform} page for the latest updates and community discussions.",
+        "visit_platform": "Visit {platform}",
+        "contact_info": "Contact Information",
+        "group_details": "Group Details",
+        "type_label": "Type",
+        "group_suffix": "Group",
+        "experience_label": "Experience Level",
+        "experience_mixed": "Mixed",
+        "frequency_label": "Meeting Frequency",
+        "frequency_varies": "Varies",
+        "privacy_label": "Privacy",
+        "privacy_public": "Public",
+        "privacy_private": "Private",
+        "location_label": "Location",
+        "language_label": "Preferred Language",
+        "location_tba": "TBA",
+        "verified": "Verified",
+        "default_catchline": "The ultimate board game experience for everyone, everywhere.",
+        "default_organizer": "The Game Master",
+        "public_group_title": "Public Group",
+        "public_group_desc": "This group is open to all. Feel free to join their upcoming events or contact the organizers directly.",
+        "private_group_title": "Private Group",
+        "private_group_desc": "This group may have additional requirements to join. Please review the contact information for details on how to apply or request membership.",
+        "default_description": "Welcome to our board game community! We play everything from light party games to heavy strategy epics. Join us for our massive weekly meetups, tournaments, charity events, and more.",
+        "login_to_view": "Login to view",
+        "report_this_group": "Report this group",
+        "board_game_group": "Board Game Group",
+        "submit_your_group": "Submit Your Group",
+        "not_found": "Group Not Found",
+        "not_found_desc": "The group you're looking for doesn't exist.",
+        "unapproved_access_denied": "This group is pending approval and not yet available",
+        "rejected_title": "Group Submission Rejected",
+        "pending_title": "Group Pending Approval",
+        "rejected_desc": "This group submission was reviewed and rejected by our administrators.",
+        "pending_desc": "This group has been submitted and is currently awaiting administrator approval. Check back soon!",
+        "status": {
+            "processing": "Processing",
+            "rejected": "Rejected",
+            "verified": "Verified",
+            "pending_verification": "Pending Verification"
+        },
+        "failed_to_load": "Failed to load group details",
+        "unclaimed": "Unclaimed",
+        "bgc_unclaimed": "BGC Unclaimed",
+        "from_facebook": "From Facebook"
+    },
+    "submit_group": {
+        "subtitle": "DIRECTORY ACCESS",
+        "title": "Submit Your Group",
+        "desc": "Share your board game community with thousands of passionate players. Fill out the form below to create a searchable directory entry.",
+        "header": {
+            "edit_title": "Edit Your Group",
+            "submit_title": "Submit Your Group",
+            "edit_desc": "Update your group details below.",
+            "submit_desc": "Share your board game community with thousands of enthusiasts."
+        },
+        "steps": {
+            "info": {
+                "title": "Info",
+                "desc": "Essential group details"
+            },
+            "location": {
+                "title": "Location",
+                "desc": "Where do you meet?"
+            },
+            "profile": {
+                "title": "Profile",
+                "desc": "Preferences & Frequency"
+            },
+            "links": {
+                "title": "Links",
+                "desc": "Connect with members"
+            }
+        },
+        "sections": {
+            "guest_warning": {
+                "title_p1": "Submitting as ",
+                "title_p2": " Guest",
+                "message_p1": "You are not logged in. Your group will be submitted for approval and listed as ",
+                "message_p2": ". Anyone (including you) will be able to submit a claim for this group later to manage it.",
+                "unclaimed": "Unclaimed",
+                "sign_in": "Sign in now",
+                "suffix": " to automatically claim this group upon submission."
+            },
+            "info": {
+                "title": "Essential Info",
+                "subtitle": "Enter the core details of your community",
+                "name_label": "Group Name *",
+                "name_placeholder": "e.g., Brooklyn Strategy Guild",
+                "catchline_label": "Catchline / Short Bio",
+                "catchline_placeholder": "A brief tag line that captures your group's essence",
+                "desc_label": "Detailed Description *",
+                "desc_placeholder": "Tell potential members about your group's culture, meeting style, game preferences, and what makes your community special.",
+                "cover_label": "Group Profile Icon (16:9)",
+                "banner_label": "Group Header Banner (3:1)",
+                "banner_placeholder": "Click to upload image",
+                "char_limit": "{count}/150 characters"
+            },
+            "location_type": {
+                "title": "Location & Type",
+                "subtitle": "Help players find your group",
+                "zipcode_label": "Zip Code *",
+                "zipcode_placeholder": "e.g. 10001",
+                "city_label": "Primary City *",
+                "city_placeholder": "Select Location",
+                "state_label": "State *",
+                "state_placeholder": "Select State",
+                "neighborhood_label": "Neighborhood (Optional)",
+                "neighborhood_placeholder": "e.g. Downtown",
+                "venue_label": "Primary Venue / Meeting Place (Optional)",
+                "venue_placeholder": "e.g. The Board Room Cafe, or 123 Main St.",
+                "privacy_label": "Primary Type *",
+                "public_title": "Public Group",
+                "public_desc": "Great for open communities where anyone is welcome. Non-sensitive info is visible to guests, but sensitive links (like Discord) will require a login to protect your community.",
+                "private_title": "Private Group",
+                "private_desc": "Great for if your group has specific join requirements or an approval process. Users must be logged in to view details, ensuring your community grows the way you want.",
+                "group_type_label": "Group Type *",
+                "category_placeholder": "Select Type",
+                "experience_label": "Experience Level *",
+                "experience_placeholder": "Select Level",
+                "frequency_label": "Frequency *",
+                "frequency_placeholder": "Select Frequency",
+                "playstyle_label": "Playstyle / Game Preferences *",
+                "playstyle_hint": "Select at least one playstyle",
+                "language_label": "Preferred Language(s) *",
+                "language_placeholder": "Select language(s)"
+            },
+            "links": {
+                "title": "Connection Links",
+                "subtitle": "Add links to your group's online presence. Click to enable the services you use.",
+                "add_more": "Add more connections:",
+                "add_prefix": "Add",
+                "display_events": "Display events?"
+            },
+            "security": {
+                "title": "Security Check",
+                "provider": "Cloudflare Turnstile",
+                "verifying": "Verifying your browser..."
+            },
+            "note": {
+                "title": "Submission Note",
+                "note_label": "Note to Admin (Optional)",
+                "note_placeholder": "Any additional information you'd like to share with the moderators..."
+            },
+            "captcha": {
+                "title": "Verification",
+                "label": "Enter Security Code",
+                "placeholder": "Type the characters above"
+            },
+            "platforms": {
+                "bgg_url": {
+                    "label": "BGG URL",
+                    "placeholder": "https://boardgamegeek.com/..."
+                },
+                "website_url": {
+                    "label": "Website",
+                    "placeholder": "https://..."
+                },
+                "discord_url": {
+                    "label": "Discord ID",
+                    "placeholder": "e.g. 123456789012345678",
+                    "hint": "Go to Server Settings > Widget. Enable 'Server Widget' and copy the Server ID."
+                },
+                "facebook_url": {
+                    "label": "Facebook",
+                    "placeholder": "https://facebook.com/..."
+                },
+                "meetup_url": {
+                    "label": "Meetup",
+                    "placeholder": "https://meetup.com/...",
+                    "public_title": "Public Group (Sync Events)",
+                    "public_desc": "Automatically sync and display your upcoming events in the directory via Meetup API.",
+                    "private_title": "Private Group (Link Only)",
+                    "private_desc": "Only display the Meetup link on your group page without event synchronization."
+                },
+                "email_url": {
+                    "label": "Email",
+                    "placeholder": "hello@example.com"
+                },
+                "whatsapp_url": {
+                    "label": "WhatsApp",
+                    "placeholder": "Phone number or link"
+                },
+                "reddit_url": {
+                    "label": "Reddit",
+                    "placeholder": "r/GroupName"
+                },
+                "instagram_url": {
+                    "label": "Instagram",
+                    "placeholder": "@username"
+                },
+                "telegram_url": {
+                    "label": "Telegram",
+                    "placeholder": "https://t.me/..."
+                },
+                "aftergame_co_url": {
+                    "label": "Aftergame.io",
+                    "placeholder": "https://aftergame.io/..."
+                },
+                "twitter_url": {
+                    "label": "Twitter",
+                    "placeholder": "https://twitter.com/..."
+                },
+                "warhorn_url": {
+                    "label": "Warhorn",
+                    "placeholder": "https://warhorn.net/..."
+                }
+            }
+        },
+        "actions": {
+            "cancel": "Cancel",
+            "submitting": "Transmitting...",
+            "submit": "Submit Community",
+            "save": "Save Group Info",
+            "saving": "Saving...",
+            "next": "Continue",
+            "back": "Back"
+        },
+        "messages": {
+            "success": "Community submitted successfully! Our moderators will review it shortly.",
+            "save_success": "Group information saved successfully!",
+            "fail": "Submission failed: ",
+            "check_fields": "Check all required fields",
+            "validation_title": "Please fill in the following required fields:",
+            "required_name": "Group name is required",
+            "required_catchline": "Catchline is required",
+            "required_description": "Description is required",
+            "required_privacy": "Please select privacy level",
+            "required_category": "Please select category",
+            "required_frequency": "Please select meeting frequency",
+            "required_experience": "Please select experience level",
+            "required_city": "Please select city",
+            "required_state": "Please select state",
+            "required_zipcode": "Zip code is required",
+            "location_auto_filled": "Location auto-filled",
+            "invalid_url": "Invalid URL format",
+            "guest_submit_alert": "Group submitted for approval! Since you are not logged in, this group is listed as \"Unclaimed\".",
+            "success_alert": "Group submitted successfully!",
+            "required_fields_alert": "Please fill out all required fields marked with *",
+            "required_playstyle": "Select at least one playstyle"
+        }
+    },
+    "claim_group_page": {
+        "title": "Claim Your Group",
+        "subtitle": "Verify your identity as a group organizer to gain control of your listing and receive a verified badge.",
+        "sections": {
+            "link": {
+                "title": "Link to Group",
+                "search_label": "Search & Select Your Group *",
+                "search_placeholder": "Search for your group...",
+                "select_placeholder": "Select a group to claim"
+            },
+            "proof": {
+                "title": "Ownership Proof",
+                "desc": "Please provide documentation that proves you are an authorized representative of this group.",
+                "role_label": "Current Admin Role *",
+                "role_select": "Select your role",
+                "profile_label": "Link to Admin Profile *",
+                "profile_desc": "Link to your profile on Meetup, Facebook, Discord, or other platform showing Admin/Organizer status.",
+                "screenshot_label": "Verification Screenshot",
+                "screenshot_desc": "Upload a screenshot of the group management dashboard or settings page showing your admin access.",
+                "upload_text": "Click to upload screenshot",
+                "upload_subtext": "PNG, JPG up to 10MB"
+            },
+            "contact": {
+                "title": "Contact for Verification",
+                "desc": "This information will only be used by our verification team and will not be made public.",
+                "email_label": "Organizer Email *",
+                "phone_label": "Phone Number",
+                "phone_desc": "Optional - For direct follow-up"
+            },
+            "agreement": {
+                "title": "Verification Agreement",
+                "checkbox_text": "I certify that I am an authorized representative of this group and the information provided is accurate. I understand that false claims may result in removal from the BGC Directory and potential legal action.",
+                "next_title": "What happens next?",
+                "next_text": "Our team will review your claim within 2-3 business days. We may contact you for additional verification. Once approved, you'll receive a verified badge and full control over your group's listing."
+            }
+        },
+        "actions": {
+            "cancel": "Cancel",
+            "submit": "Submit Claim Request"
+        },
+        "messages": {
+            "success_title": "Claim Submitted!",
+            "success_desc": "We've received your claim request for {group}. Please check your email {email} for a verification link to complete the process.",
+            "success_btn": "Go to My Profile",
+            "resend": "Didn't get the email? {btn}",
+            "resend_btn": "Resend"
+        }
+    },
+    "my_groups_page": {
+        "manage_title": "Groups You Own",
+        "followed_title": "Groups You Follow",
+        "role_owner": "Owner",
+        "role_member": "Follower",
+        "no_associations": "You haven't followed or created any groups yet.",
+        "browse_directory": "Browse the Directory",
+        "members_count": "{count} Members",
+        "pending_approval": "Pending Approval",
+        "processing": "Processing",
+        "delete_submission": "Cancel Submission",
+        "approved": "Approved",
+        "no_owned_groups": "You haven't created any groups yet."
+    },
+    "settings": {
+        "title": "Account Settings",
+        "notifications": {
+            "title": "Notifications",
+            "desc": "Manage how you receive updates and alerts",
+            "newsletter": "Newsletter"
+        }
+    },
+    "admin": {
+        "title": "Admin Dashboard",
+        "subtitle": "Manage directory content and user reports",
+        "access_badge": "Admin Access",
+        "access_denied_title": "Access Denied",
+        "access_denied_text": "You do not have permission to view this page.",
+        "tabs": {
+            "pending": "Pending Approvals",
+            "claims": "Claim Requests",
+            "reports": "Reports",
+            "groups": "Manage Groups",
+            "users": "Manage Users"
+        },
+        "actions": {
+            "review": "Review",
+            "reject": "Reject",
+            "approve": "Approve",
+            "unapprove": "Unapprove",
+            "resolve": "Resolve",
+            "ignore": "Dismiss",
+            "enable": "Enable",
+            "disable": "Disable",
+            "verify": "Verify",
+            "unverify": "Unverify",
+            "edit": "Edit",
+            "save": "Save",
+            "delete": "Delete",
+            "cancel": "Cancel",
+            "save_changes": "Save Changes",
+            "confirm_rejection": "Confirm Rejection"
+        },
+        "empty": {
+            "approvals": "All caught up!",
+            "approvals_text": "There are no pending group approvals.",
+            "claims": "No pending claims",
+            "claims_text": "All ownership claims have been processed.",
+            "reports": "All quiet!",
+            "reports_text": "There are no pending reports to review.",
+            "no_groups": "No groups found matching your search.",
+            "no_users": "No users found matching your search."
+        },
+        "edit_user_title": "Edit User",
+        "rejection_modal_title": "Provide Rejection Reason",
+        "rejection_modal_text": "Please explain why this {type} is being rejected.",
+        "submitted_by": "Submitted by",
+        "current_owner": "Current Owner",
+        "claimant": "Claimant",
+        "reporter": "Reporter",
+        "name_label": "Name",
+        "email_label": "Email",
+        "role_label": "Role",
+        "status_label": "Status",
+        "group_status_active": "Active",
+        "group_status_pending": "Pending",
+        "user_status_active": "Active",
+        "user_status_banned": "Banned",
+        "user_role_guest": "Guest",
+        "user_role_user": "User",
+        "user_role_admin": "Admin",
+        "user_badge_banned": "Banned",
+        "user_badge_admin": "Admin",
+        "unclaimed": "Unclaimed",
+        "guest": "Guest",
+        "anonymous": "Anonymous",
+        "disabled": "Disabled",
+        "joined": "Joined",
+        "role": "Role",
+        "verified": "Verified",
+        "system_account": "System Account",
+        "by": "By",
+        "reason": "Reason",
+        "no_entries": "No entries in {tab} yet",
+        "claim_request_for": "Claim Request for",
+        "view_proof": "View Profile Proof",
+        "reported": "Reported",
+        "messages": {
+            "success": "Action completed successfully",
+            "failed": "Action failed",
+            "group_deleted": "Group deleted successfully",
+            "group_rejected": "Group submission rejected",
+            "claim_rejected": "Claim request rejected",
+            "user_updated": "User updated successfully",
+            "user_deleted": "User deleted successfully",
+            "user_banned": "Banned {name}",
+            "user_unbanned": "Unbanned {name}"
+        },
+        "confirms": {
+            "delete_group": "Are you sure you want to delete this group? This action cannot be undone.",
+            "delete_user": "Are you sure you want to delete this user? This action cannot be undone.",
+            "ban_user": "Are you sure you want to ban {name}?"
+        },
+        "tooltips": {
+            "edit_group": "Edit Group",
+            "delete_group": "Delete Group",
+            "edit_user": "Edit User",
+            "ban_user": "Ban User",
+            "unban_user": "Unban User",
+            "delete_user": "Delete User"
+        }
+    },
+    "report_group": {
+        "title": "Report Group",
+        "subtitle": "Help us maintain the quality of the BGC Directory",
+        "back_to_group": "Back to Group",
+        "reporting_label": "REPORTING",
+        "reason_label": "Reason for Report *",
+        "reason_placeholder": "Select a reason",
+        "description_label": "Description *",
+        "description_placeholder": "Please provide specific details about the issue...",
+        "email_label": "Your Email (Optional)",
+        "email_placeholder": "We may contact you for more information",
+        "actions": {
+            "cancel": "Cancel",
+            "submit": "Submit Report"
+        },
+        "reasons": {
+            "inappropriate": "Inappropriate Content",
+            "spam": "Spam or Misleading",
+            "inactive": "Group is Inactive",
+            "duplicate": "Duplicate Listing",
+            "wrong_info": "Incorrect Information",
+            "other": "Other"
+        }
+    },
+    "events": {
+        "index_pill": "Events Index",
+        "title": "Upcoming Board Gaming Events",
+        "subtitle": "Discover the next game night, tournament, or social gathering in the board gaming community.",
+        "loading": "Loading board game calendar...",
+        "next_event": "Next Event",
+        "host": "Host:",
+        "default_desc": "Join us for a fantastic night of board gaming, strategy, and fun!",
+        "join_meetup": "Join on Meetup",
+        "about_group": "About Group",
+        "no_events": "No upcoming events",
+        "no_events_desc": "We couldn't find any scheduled events across our verified communities. Check back soon!",
+        "aggregate_data": "Aggregate data from Meetup API (simulated). Last updated: 2026-03-20."
+    },
+    "not_found": {
+        "title": "Page Not Found",
+        "desc": "The board game you're looking for seems to be missing from the shelf. Let's get you back to the game.",
+        "back_home": "Back to Home",
+        "browse_directory": "Browse Directory",
+        "go_back": "Go Back"
+    },
+    "change_password": {
+        "back_profile": "Back to Profile",
+        "title": "Change Password",
+        "desc": "Choose a strong password to keep your account secure.",
+        "current_label": "Current Password",
+        "new_label": "New Password",
+        "new_hint": "Must be at least 8 characters",
+        "confirm_label": "Confirm New Password",
+        "updating": "Updating...",
+        "update_btn": "Update Password",
+        "errors": {
+            "match": "New passwords do not match",
+            "length": "Password must be at least 8 characters long"
+        },
+        "success": "Password changed successfully"
+    },
+    "groups_index": {
+        "pill": "Group Index",
+        "title": "Directory of All Board Game Communities",
+        "subtitle": "Browse our complete collection of verified board gaming groups and social communities across the United States.",
+        "member_count": "{count} Members",
+        "footer": "Total {count} active communities listed. Updated daily."
+    },
+    "image_upload": {
+        "modal_title_cover": "Update Profile Cover",
+        "modal_title_banner": "Update Header Banner",
+        "modal_desc_cover": "Upload a 16:9 cover image",
+        "modal_desc_banner": "Upload a wide banner image (3:1)",
+        "modal_desc_crop_cover": "Position and crop your image",
+        "modal_desc_crop_banner": "Position and crop your wide banner",
+        "dropzone": {
+            "title": "Drag & drop your image",
+            "title_active": "Drop your image here",
+            "tap_to_browse": "or tap to browse",
+            "limits": "JPEG, PNG, WebP up to 10MB",
+            "error_type": "Please select a JPEG, PNG, or WebP image.",
+            "error_size": "File size must be under 10MB."
+        },
+        "cropper": {
+            "drag_to_reposition": "Drag to reposition",
+            "zoom": "Zoom",
+            "rotate_left": "Left",
+            "rotate_right": "Right",
+            "reset": "Reset",
+            "change_image": "Change Image"
+        },
+        "actions": {
+            "cancel": "Cancel",
+            "save_cover": "Save Cover",
+            "save_banner": "Save Banner",
+            "saving": "Saving..."
+        }
+    }
+}
